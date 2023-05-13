@@ -27,20 +27,38 @@ export const Home = () => {
   return (
     <>
       <Banner />
-      <Category />
+      <div className="container categories" style={{ padding: "50px 0px 0px" }}>
+        <h3>Featured Categories</h3>
+        <div className="row ">
+          {filteredCountries.slice(0, 7).map((item) => (
+            <Category
+              key={item.id}
+              image={item.image}
+              id={item.id}
+              categories={item.categories}
+            />
+          ))}
+        </div>
+      </div>
       <About />
-      {filteredCountries.slice(0, 5).map((item) => (
-        <Product
-          key={item.id}
-          id={item.id}
-          title={item.title}
-          price={item.price}
-          rating={item.rating}
-          detail={item.detail}
-          specification={item.specification}
-          img={item.image}
-        />
-      ))}
+      <div className="container">
+        <h3 style={{ marginTop: '70px'}}>Popular Products</h3>
+        <div className=" row">
+          {filteredCountries.slice(10, 19).map((item) => (
+            <Product
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              price={item.price}
+              rating={item.rating}
+              detail={item.detail}
+              specification={item.specification}
+              img={item.image}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="container" style={{ margin: '60px auto'}}> <img src="/images/bg1.png" style={{ width: '100%'}}/></div>
     </>
   );
 };

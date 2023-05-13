@@ -1,122 +1,23 @@
 import React from "react";
 
-export default function Category() {
+export default function Category({categories, image, id}) {
   return (
-    <div className="container" style={{ padding: "50px 0px 0px" }}>
-      <div className="row ">
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
+
+        <div className="col" key={id} >
+          <div  style={{ width: "100%", display: "inline-block", background: '#f2fce4' }}>
             <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
+              <div class={"category-boxes" + ' ' + 'bg' + id}>
                 <div class="img-sec">
                   <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
+                    src={image}
                     class="img-fluid"
                     alt=""
                   />
                 </div>
-                <h4>Vegetables</h4>
+                <h4>{categories}</h4>
               </div>
             </a>
           </div>
         </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col">
-          <div class="" style={{ width: "100%", display: "inline-block" }}>
-            <a href="category-page(vegetables).html" tabindex="0">
-              <div class="category-boxes">
-                <div class="img-sec">
-                  <img
-                    src="https://themes.pixelstrap.com/multikart/assets/images/icon/vegetables/veg.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <h4>Vegetables</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }

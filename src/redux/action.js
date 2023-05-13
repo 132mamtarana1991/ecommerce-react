@@ -12,7 +12,7 @@ export const loadUsers = () => async (dispatch) => {
 export const getSingleuser = (id) => async (dispatch) => {
   const result = await axios.get(`http://localhost:3000/posts/${id}`);
   dispatch({
-    type: types.GET_SINGLE_USER,
+    type:  types.GET_SINGLE_USER,
     payload: result.data,
   });
 };

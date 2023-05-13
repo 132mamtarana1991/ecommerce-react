@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { searchFood } from "../../redux/action";
+import { searchFood, deleteUsers } from "../../redux/action";
 import {  Link } from "react-router-dom";
 export default function NewHeader() {
   let dispatch = useDispatch();
   const { basket } = useSelector((state) => ({
     basket: state.data.basket,
   }));
-
+  const removeProduct = (id) => {
+    dispatch(deleteUsers(id))
+  }
 
   return (
     <div className="header-fix">
@@ -144,55 +146,39 @@ export default function NewHeader() {
                         </Link>
                         <span class="cart_qty_cls">{basket ? basket.length : 0}</span>
                         <ul class="show-div shopping-cart">
-                          <li>
-                            <div class="media">
-                              <a href="#">
-                                <img
-                                  alt=""
-                                  class="me-3"
-                                  src="../assets/images/fashion/product/1.jpg"
-                                />
-                              </a>
-                              <div class="media-body">
-                                <a href="#">
-                                  <h4>item name</h4>
-                                </a>
-                                <h4>
-                                  <span>1 x $ 299.00</span>
-                                </h4>
+                          {basket?.length > 0 && basket.map((item)=>{
+                            return(
+                              <>
+                              <li>
+                              <div class="media">
+                                <Link to={`/single-product/${item.id}`}>
+                                  <img
+                                    alt=""
+                                    class="me-3"
+                                    src={item.img}
+                                  />
+                                </Link>
+                                <div class="media-body">
+                                  <Link to={`/single-product/${item.id}`}>
+                                    <h4>{item.title}</h4>
+                                  </Link>
+                                  <h4>
+                                    <span>${item.price}</span>
+                                  </h4>
+                                </div>
                               </div>
-                            </div>
-                            <div class="close-circle">
-                              <a href="#">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                              </a>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="media">
-                              <a href="#">
-                                <img
-                                  alt=""
-                                  class="me-3"
-                                  src="../assets/images/fashion/product/2.jpg"
-                                />
-                              </a>
-                              <div class="media-body">
-                                <a href="#">
-                                  <h4>item name</h4>
-                                </a>
-                                <h4>
-                                  <span>1 x $ 299.00</span>
-                                </h4>
+                              <div class="close-circle">
+                                <button  onClick={() => removeProduct(item.id)}>
+                                  <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
                               </div>
-                            </div>
-                            <div class="close-circle">
-                              <a href="#">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                              </a>
-                            </div>
-                          </li>
-                          <li>
+                            </li>
+                            </>
+                            )
+                          })}
+                         
+                         
+                          {/* <li>
                             <div class="total">
                               <h5>
                                 subtotal : <span>$299.00</span>
@@ -204,11 +190,13 @@ export default function NewHeader() {
                               <a href="cart.html" class="view-cart">
                                 view cart
                               </a>{" "}
-                              <a href="#" class="checkout">
+                              <Link to={`/single-product/${id}`}  class="checkout">
                                 checkout
-                              </a>
+                              </Link>
                             </div>
-                          </li>
+                          </li> */}
+
+                          
                         </ul>
                       </li>
                     </ul>

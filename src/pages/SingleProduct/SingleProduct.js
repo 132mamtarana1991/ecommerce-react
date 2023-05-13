@@ -1,16 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { useParams } from "react-router-dom";
 import { useDispatch,useSelector } from 'react-redux';
 import { FaShoppingBag } from 'react-icons/fa';
-import { addBasket } from '../../redux/action';
+import { addBasket, getSingleuser } from '../../redux/action';
 
 export const SingleProduct = () => {
   const { user } = useSelector((state) => ({
-    user: state.data.users,
+    user: state.data.user,
   }));
+
   let { id } = useParams()
   let dispatch = useDispatch();
   let singleProductSelect = user
+
+  useEffect(() => {
+    dispatch(getSingleuser(id));
+}, []);
+
   const addProduct = () => {
     const item = {
       id: singleProductSelect.id,

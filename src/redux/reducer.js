@@ -20,17 +20,15 @@ const basketReducer = (state = initialState, action) => {
         loading: false,
       };
 
+      case types.GET_SINGLE_USER: return {
+        ...state,
+        user: action.payload,
+        loading: false
+    }
     case types.GET_USERS:
       return {
         ...state,
         users: action.payload,
-        loading: false,
-      };
-
-    case types.GET_SINGLE_USER:
-      return {
-        ...state,
-        user: action.payload,
         loading: false,
       };
 
