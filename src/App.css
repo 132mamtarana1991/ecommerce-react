@@ -40467,3 +40467,40 @@ marquee.marquee {
         flex: 0 0 100% !important;
     }
 }
+.product-list-small img {
+    width: 100%;
+}
+.product-list-small figure img {
+    border-radius: 10px;
+    background: #ededed;
+}
+.hover-up {
+    margin-bottom: 13px;
+}
+.product-list-small h6 a {
+    color: #253D4E;
+    font-size: 16px;
+    font-weight: 800;
+}
+.product-list-small .product-price {
+    color: #3BB77E;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.product-list-small .product-price span.old-price {
+    font-size: 14px;
+    color: #adadad;
+    margin: 0 0 0 7px;
+    text-decoration: line-through;
+}
+.product-rating {
+    height: 12px;
+    background-repeat: repeat-x;
+    background-image: url('https://wp.alithemes.com/html/nest/demo/assets/imgs/theme/rating-stars.png');
+    background-position: 0 0;
+}
+.selling {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
