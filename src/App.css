@@ -40490,7 +40490,7 @@ marquee.marquee {
 }
 .product-list-small figure img {
     border-radius: 10px;
-    background: #ededed;
+    border: 1px solid #d1d1d1;
 }
 .hover-up {
     margin-bottom: 13px;
