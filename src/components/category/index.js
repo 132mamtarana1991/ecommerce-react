@@ -1,5 +1,5 @@
 import React from "react";
-
+import {  Link } from "react-router-dom";
 export default function Category({categories, image, id}) {
   return (
 
@@ -14,7 +14,7 @@ export default function Category({categories, image, id}) {
                     alt=""
                   />
                 </div>
-                <h4>{categories}</h4>
+               <Link  to={`/categories-product/${categories}`}> <h4>{categories}</h4></Link>
               </div>
             </a>
           </div>

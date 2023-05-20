@@ -40651,3 +40651,9 @@ a.btn.mb-20.w-100 {
     text-align: center;
     padding: 80px 0px;
 }
+.archive-header {
+    background: url('https://wp.alithemes.com/html/nest/demo/assets/imgs/blog/header-bg.png') no-repeat center center;
+    border-radius: 20px;
+    padding: 70px 80px;
+    background-size: cover;
+}

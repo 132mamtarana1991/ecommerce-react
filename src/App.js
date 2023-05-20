@@ -11,6 +11,7 @@ import NewHeader from './components/Header/new-header';
 import SubHeader from './components/Header/sub-header';
 import Feature from "./components/feature";
 import Footer from "./components/footer";
+import CategoriesProduct from './pages/categories-product';
 function App() {
 
     return (
@@ -25,7 +26,7 @@ function App() {
                 <Route path="/single-product/:id" element={<SingleProduct />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/categories-product/:id" element={<CategoriesProduct />} />
                 <Route exact path="/" element={<Home />} />
             </Routes>
             <Feature/>

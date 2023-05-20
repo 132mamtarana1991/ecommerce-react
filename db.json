@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 21.43,
-      "categories": "Cake & Milk",
+      "categories": "cake-milk",
       "rating": 4,
       "specification": [
         "2.5GHz Intel i5-10300H 10th Gen processor",
@@ -21,7 +21,7 @@
       "id": "2",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 53.03,
-      "categories": "Oganic Kiwi",
+      "categories": "oganic-kiwi",
       "rating": 4,
       "specification": [
         "2.5GHz Intel i5-10300H 10th Gen processor",
@@ -49,11 +49,11 @@
       ],
       "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
       "image": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png",
-      "categories": "Peach"
+      "categories": "peach"
     },
     {
       "id": "4",
-      "categories": "Red Apple",
+      "categories": "red-apple",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 71.25,
       "rating": 4,
@@ -70,7 +70,7 @@
     },
     {
       "id": "5",
-      "categories": "Snack",
+      "categories": "snack",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 12.83,
       "rating": 4,
@@ -87,7 +87,7 @@
     },
     {
       "id": "6",
-      "categories": "Vegetables",
+      "categories": "vegetables",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 41.03,
       "rating": 4,
@@ -104,7 +104,7 @@
     },
     {
       "id": "7",
-      "categories": "Strawberry",
+      "categories": "strawberry",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 41.43,
       "rating": 4,
@@ -121,7 +121,7 @@
     },
     {
       "id": "8",
-      "categories": "Black plum",
+      "categories": "black-plum",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 31.43,
       "rating": 4,
@@ -138,7 +138,7 @@
     },
     {
       "id": "9",
-      "categories": "Custard apple",
+      "categories": "custard-apple",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 21.13,
       "rating": 4,
@@ -157,7 +157,7 @@
       "id": "10",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 11.13,
-      "categories": "Cake & Milk",
+      "categories": "cake-milk",
       "rating": 4,
       "specification": [
         "2.5GHz Intel i5-10300H 10th Gen processor",
@@ -223,7 +223,7 @@
     },
     {
       "id": "15",
-      "categories": "Snack",
+      "categories": "snack",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 41.43,
       "rating": 4,
