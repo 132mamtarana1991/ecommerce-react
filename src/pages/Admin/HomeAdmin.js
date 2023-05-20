@@ -1,51 +1,73 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadUsers, deleteUsers } from "../../redux/action";
+import { loadUsers, DeleteAdmin } from "../../redux/action";
 import { Link } from "react-router-dom";
-import { Table,  } from 'antd';
-import { useNavigate } from 'react-router-dom'
+import { Table } from "antd";
+import { useNavigate } from "react-router-dom";
 export default function HomeAdmin() {
-    const { Column } = Table;
-    let dispatch = useDispatch();
-    const navigate = useNavigate();
-    const { users } = useSelector((state) => ({
-        users: state.data.users,
-    }));
-    useEffect(() => {
-        dispatch(loadUsers());
-    }, []);
+  const { Column } = Table;
+  let dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { users } = useSelector((state) => ({
+    users: state.data.users,
+  }));
+  useEffect(() => {
+    dispatch(loadUsers());
+  }, []);
 
-    const HandleDelete = (id) => {
-        if (window.confirm("Please Confirm Delete Yes or No")) {
-            dispatch(deleteUsers(id));
-        }
-    };
-    const list = users && users.slice().reverse();
-    return (
-        <div>
-             <Table
-            size="small"
-            dataSource={list}
-            pagination={{ defaultPageSize: 10}}
-            rowKey="id"
-          >
-            <Column
-              title="Title"
-              dataIndex="title"
-              sorter={(a, b) => a.title - b.title}
-            />
-                <Column
-              title="Price"
-              dataIndex="price"
-              sorter={(a, b) => a.Price - b.Price}
-            />
-                <Column
-              title="Categories"
-              dataIndex="categories"
-              sorter={(a, b) => a.categories - b.categories}
-            />
-            </Table>
-            {/* <>
+  const HandleDelete = (id) => {
+    console.log(id,'idididid')
+    if (window.confirm("Please Confirm Delete Yes or No")) {
+      dispatch(DeleteAdmin(id));
+    }
+  };
+  const list = users && users.slice().reverse();
+  return (
+    <div className="container">
+      <Table
+        size="small"
+        dataSource={list}
+        pagination={{ defaultPageSize: 8 }}
+        rowKey="id"
+      >
+        <Column
+          title="Image"
+          dataIndex="image"
+          render={text => (
+             <img src={text} style={{ width: '53px'}}/>
+          )}
+        />
+        <Column
+          title="Title"
+          dataIndex="title"
+          sorter={(a, b) => a.title.localeCompare(b.title)}
+        />
+        <Column
+          title="Price"
+          dataIndex="price"
+          sorter={(a, b) => a.price - b.price}
+        />
+        <Column
+          title="Categories"
+          dataIndex="categories"
+          sorter={(a, b) => a.categories.localeCompare(b.categories)}
+        />
+         <Column
+          title="Delete"
+          dataIndex="id"
+          render={text => (
+            <button onClick={() => HandleDelete(text)}>Delete</button>
+         )}
+        />
+        <Column
+          title="editUser"
+          dataIndex="id"
+          render={text => (
+            <button onClick={() => navigate(`/editUser/${text}`)}>Edit</button>
+         )}
+        />
+      </Table>
+      {/* <>
                 <Link to="/AddUser">
                     <button style={{ background: "Green" }}> Add User</button>
                 </Link>
@@ -73,6 +95,6 @@ export default function HomeAdmin() {
 
 
             </> */}
-        </div>
-    );
+    </div>
+  );
 }

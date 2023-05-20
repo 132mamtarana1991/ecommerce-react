@@ -87,7 +87,7 @@ const basketReducer = (state = initialState, action) => {
         user: action.payload,
         loading: false
     }
-
+    case types.DELETE_ADMIN: 
 
 
 

@@ -57,9 +57,18 @@ export const searchFood = (item) => ({
 
 
 // Admin
+export const DeleteAdmin = (id) => async (dispatch) => {
+  await axios.delete(`http://localhost:3000/posts/${id}`);
+  dispatch({
+    type: types.DELETE_ADMIN,
+    payload: id,
+  });
+  dispatch(loadUsers());
+};
+
 
 export const addUsers = (user) => async (dispatch) => {
- await axios.post("http://localhost:3000/users/", user);
+ await axios.post("http://localhost:3000/posts/", user);
   dispatch({
     type: types.ADD_USER,
     payload: user,

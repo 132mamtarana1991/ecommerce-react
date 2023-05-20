@@ -39,8 +39,6 @@ export const SingleProduct = () => {
             <Link to="/" rel="nofollow">
               <i className="fa fa-home mr-1"></i>Home
             </Link>
-            <span></span>{" "}
-            <a href="shop-grid-right.html">Vegetables &amp; tubers</a>{" "}
             <span></span> Seeds of Change Organic
           </div>
         </div>

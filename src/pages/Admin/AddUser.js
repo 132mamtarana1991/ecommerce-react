@@ -10,26 +10,26 @@ const AddUser = () => {
 
 
     const [user, setUser] = useState({
-        username: "",
-        email: "",
-        phone: "",
+        title: "",
+        price: "",
+        categories: "",
     });
 
-    const { username, email, phone } = user;
+    const { title, price, categories } = user;
     const onInputChange = e => {
         setUser({ ...user, [e.target.name]: e.target.value });
     };
 
     const onSubmit = async e => {
         e.preventDefault();
-        if (!username || !email || !phone) {
+        if (!title || !price || !categories) {
             setError('Please required')
-        } else if (!username.match('^[a-zA-Z ]*$')) {
+        } else if (!title.match('^[a-zA-Z ]*$')) {
             setErrorName('Please Only Charchter')
         }
         else {
             dispatch(addUsers(user))
-            navigate('/')
+            navigate('/admin')
             setError('')
         }
     };
@@ -46,8 +46,8 @@ const AddUser = () => {
                             type="text"
                             className="form-control form-control-lg"
                             placeholder="Enter Your Name"
-                            name="username"
-                            value={username}
+                            name="title"
+                            value={title}
                             onChange={e => onInputChange(e)}
                         />
                         {nameError && nameError}
@@ -55,11 +55,11 @@ const AddUser = () => {
 
                     <div className="form-group">
                         <input
-                            type="email"
+                            type="price"
                             className="form-control form-control-lg"
                             placeholder="Enter Your E-mail Address"
-                            name="email"
-                            value={email}
+                            name="price"
+                            value={price}
                             onChange={e => onInputChange(e)}
                         />
                     </div>
@@ -67,9 +67,9 @@ const AddUser = () => {
                         <input
                             type="text"
                             className="form-control form-control-lg"
-                            placeholder="Enter Your Phone Number"
-                            name="phone"
-                            value={phone}
+                            placeholder="Enter Your categories Number"
+                            name="categories"
+                            value={categories}
                             onChange={e => onInputChange(e)}
                         />
                     </div>
