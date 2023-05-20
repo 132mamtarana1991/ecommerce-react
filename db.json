@@ -105,7 +105,7 @@
     {
       "id": "7",
       "categories": "strawberry",
-      "title": "Seeds Of Change Organic Quinoa",
+      "title": "Strawberry Body Butter",
       "price": 41.43,
       "rating": 4,
       "specification": [
@@ -240,7 +240,7 @@
     },
     {
       "id": "16",
-      "categories": "Vegetables",
+      "categories": "vegetables",
       "title": "Seeds Of Change Organic Quinoa",
       "price": 51.43,
       "rating": 4,
@@ -258,7 +258,7 @@
     {
       "id": "17",
       "categories": "Strawberry",
-      "title": "Seeds Of Change Organic Quinoa",
+      "title": "Strawberry Shower Scrub",
       "price": 61.43,
       "rating": 4,
       "specification": [
@@ -270,7 +270,7 @@
         "2.35kg laptop"
       ],
       "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      "image": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-6-1.jpg"
+      "image": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png"
     },
     {
       "id": "18",
@@ -305,6 +305,23 @@
       ],
       "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
       "image": "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-8-1.jpg"
+    },
+    {
+      "id": "20",
+      "categories": "Strawberry",
+      "title": "Lather & Slather Strawberry Duo",
+      "price": 61.43,
+      "rating": 4,
+      "specification": [
+        "2.5GHz Intel i5-10300H 10th Gen processor",
+        "8GB DDR4 RAM",
+        "1TB 7200rpm hard drive + 256GB SSD",
+        "16-inch screen, NVIDIA GeForce GTX 1650 4GB Graphics",
+        "Windows 10 Home operating system",
+        "2.35kg laptop"
+      ],
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
+      "image": "https://cdn.shopify.com/s/files/1/0566/5944/3777/products/1_a132ab8d-1484-4c26-ab28-8a8795872882.jpg?v=1672289413"
     }
   ]
 }

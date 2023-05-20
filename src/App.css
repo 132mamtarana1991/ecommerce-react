@@ -39972,8 +39972,11 @@ ul.header-dropdown {
     padding: 20px;
     background: #fff;
     border: 1px solid #ececec;
+    height: 271px;
 }
-
+.page-categories {
+    padding: 80px 0px;
+}
 .product-tumb img {
     max-width: 70%;
 }
