@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasket, getSingleuser } from "../../redux/action";
-import SideBar from "./SideBar";
+import SideBar from "../../components/SideBar";
 import {  Link } from "react-router-dom";
+import Review from "../../components/review";
 export const SingleProduct = () => {
   const { user } = useSelector((state) => ({
     user: state.data.user,
@@ -16,7 +17,7 @@ export const SingleProduct = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(getSingleuser(id));
-  }, []);
+  }, [id]);
 
   const addProduct = () => {
     const item = {
@@ -118,6 +119,7 @@ export const SingleProduct = () => {
           </div>
         </div>
       </div>
+      <Review/>
     </div>
   );
 };
