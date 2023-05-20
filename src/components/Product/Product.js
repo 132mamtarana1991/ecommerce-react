@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addBasket } from "../../redux/action";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 const Product = ({ id, title, price, rating, detail, specification, img }) => {
   let dispatch = useDispatch();
   const addProduct = () => {
@@ -14,10 +16,12 @@ const Product = ({ id, title, price, rating, detail, specification, img }) => {
       specification,
       img,
     };
+    toast("Product Add");
     dispatch(addBasket(item));
   };
   return (
     <>
+     <ToastContainer />
       <div className="col-lg-3">
         <div className="product-card">
           <div className="badge">Sale</div>

@@ -9,6 +9,9 @@ const initialState = {
   total: 0,
   count: 0,
   search: "",
+
+  usersAdmin: [],
+  userAdmin: {},
 };
 
 const basketReducer = (state = initialState, action) => {
@@ -66,6 +69,31 @@ const basketReducer = (state = initialState, action) => {
         ...state,
         count: state.count - 1 > 0 ? state.count - 1 : 1,
       };
+
+
+
+
+
+   
+    case types.ADD_USER:
+    case types.USER_UPDATE_USER:
+    return {
+        ...state,
+        loading: false
+    }
+ 
+    case types.GET_SINGLE_ADMIN: return {
+        ...state,
+        user: action.payload,
+        loading: false
+    }
+
+
+
+
+
+
+
     default:
       return state;
   }

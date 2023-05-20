@@ -76,12 +76,12 @@ export const Checkout = () => {
                       </td>
                       <td className="product-des product-name">
                         <h6 className="">
-                          <a
+                          <Link
                             className="product-name mb-10 text-heading"
-                            href="shop-product-right.html"
+                            to={`/single-product/${item.id}`}
                           >
                             {item.title}
-                          </a>
+                          </Link>
                         </h6>
                       </td>
 

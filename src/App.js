@@ -12,6 +12,9 @@ import SubHeader from './components/Header/sub-header';
 import Feature from "./components/feature";
 import Footer from "./components/footer";
 import CategoriesProduct from './pages/categories-product';
+import HomeAdmin from './pages/Admin/HomeAdmin';
+import EditUser from './pages/Admin/EditUser';
+import AddUser from './pages/Admin/AddUser';
 function App() {
 
     return (
@@ -28,6 +31,12 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/categories-product/:id" element={<CategoriesProduct />} />
                 <Route exact path="/" element={<Home />} />
+
+
+                <Route path="/AddUser" element={<AddUser />} />
+                <Route path="/editUser/:id" element={<EditUser />} />
+                <Route exact path="/admin" element={<HomeAdmin />} />
+
             </Routes>
             <Feature/>
       <Footer/>

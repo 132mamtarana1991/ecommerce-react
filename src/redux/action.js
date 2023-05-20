@@ -50,3 +50,36 @@ export const searchFood = (item) => ({
   type: types.SEARCH,
   payload: item,
 });
+
+
+
+
+
+
+// Admin
+
+export const addUsers = (user) => async (dispatch) => {
+ await axios.post("http://localhost:3000/users/", user);
+  dispatch({
+    type: types.ADD_USER,
+    payload: user,
+  });
+  dispatch(loadUsers());
+};
+
+export const getSingleAdmin = (id) => async (dispatch) => {
+  const result = await axios.get(`http://localhost:3000/users/${id}`);
+  dispatch({
+    type:  types.GET_SINGLE_ADMIN,
+    payload: result.data,
+  });
+};
+
+export const updateSingleuser = (user,id) => async (dispatch) => {
+  const result = await axios.put(`http://localhost:3000/users/${id}`,user)
+  dispatch({
+    type:  types.GET_SINGLE_USER,
+    payload: result.data,
+  });
+  dispatch(loadUsers());
+};
