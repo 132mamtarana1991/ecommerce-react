@@ -57,17 +57,15 @@ export default function NewHeader() {
                         <div>
                           <img
                             src="../assets/images/icon/search.png"
-                            onclick="openSearch()"
                             className="img-fluid blur-up lazyload"
                             alt=""
                           />
-                          <i className="ti-search" onclick="openSearch()"></i>
+                          <i className="ti-search"></i>
                         </div>
                         <div id="search-overlay" className="search-overlay">
                           <div>
                             <span
                               className="closebtn"
-                              onclick="closeSearch()"
                               title="Close Overlay"
                             >
                               ×
@@ -146,10 +144,9 @@ export default function NewHeader() {
                         </Link>
                         <span className="cart_qty_cls">{basket ? basket.length : 0}</span>
                         <ul className="show-div shopping-cart">
-                          {basket?.length > 0 && basket.map((item)=>{
+                          {basket?.length > 0 && basket.map((item, index)=>{
                             return(
-                              <>
-                              <li>
+                              <li key={index}>
                               <div className="media">
                                 <Link to={`/single-product/${item.id}`}>
                                   <img
@@ -173,7 +170,6 @@ export default function NewHeader() {
                                 </button>
                               </div>
                             </li>
-                            </>
                             )
                           })}
                          

@@ -8,7 +8,6 @@ export const Checkout = () => {
   const { basket, total, count } = useSelector((state) => state.data);
   let dispatch = useDispatch();
   const numbers = basket.map((item) => item.price);
-  console.log(count, "numbers");
 
   const removeProduct = (id) => {
     dispatch(deleteUsers(id));
@@ -57,7 +56,7 @@ export const Checkout = () => {
             <table className="table table-wishlist">
               <thead>
                 <tr className="main-heading">
-                  <th scope="col" colspan="2">
+                  <th scope="col" >
                     Product
                   </th>
                   <th scope="col">Quantity</th>
@@ -70,8 +69,7 @@ export const Checkout = () => {
               <tbody>
                 {basket &&
                   basket.map((item, ind) => (
-                    <>
-                      <tr className="pt-30">
+                      <tr className="pt-30" key={ind}>
                         <td className="image product-thumbnail pt-40">
                           <img src={item.img} alt="#" />
                         </td>
@@ -123,7 +121,6 @@ export const Checkout = () => {
                           </a>
                         </td>
                       </tr>
-                    </>
                   ))}
               </tbody>
             </table>

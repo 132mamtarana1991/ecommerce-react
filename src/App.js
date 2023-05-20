@@ -9,7 +9,8 @@ import { Checkout } from './pages/Checkout/Checkout';
 import { SingleProduct } from './pages/SingleProduct/SingleProduct';
 import NewHeader from './components/Header/new-header';
 import SubHeader from './components/Header/sub-header';
-
+import Feature from "./components/feature";
+import Footer from "./components/footer";
 function App() {
 
     return (
@@ -26,7 +27,8 @@ function App() {
                 <Route path="/register" element={<Register />} />
                 <Route exact path="/" element={<Home />} />
             </Routes>
-
+            <Feature/>
+      <Footer/>
         </>
     );
 }

@@ -6,6 +6,7 @@ import Banner from "../../components/banner";
 import Category from "../../components/category";
 import About from "../../components/about/about";
 
+
 export const Home = () => {
   let dispatch = useDispatch();
   const { users, search } = useSelector((state) => ({
@@ -24,6 +25,7 @@ export const Home = () => {
       )
     );
   }, [search, users]);
+  
   return (
     <>
       <Banner />
@@ -41,7 +43,7 @@ export const Home = () => {
         </div>
       </div>
       <About />
-      <div className="container">
+      <div className="container ProductsAll">
         <h3 style={{ marginTop: '70px'}}>Popular Products</h3>
         <div className=" row">
           {filteredCountries.slice(10, 19).map((item) => (
@@ -59,6 +61,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="container" style={{ margin: '60px auto'}}> <img src="/images/bg1.png" style={{ width: '100%'}}/></div>
+    
     </>
   );
 };
