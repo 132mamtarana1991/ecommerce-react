@@ -14,6 +14,7 @@ export const SingleProduct = () => {
   let singleProductSelect = user;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     dispatch(getSingleuser(id));
   }, []);
 

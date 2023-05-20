@@ -2,17 +2,19 @@ import React from "react";
 
 export default function Banner() {
   return (
+    <div className="over-flow">
+      <div className="snow"></div>
     <div
       className="home bg-size blur-up lazyloaded"
       style={{
-        backgroundImage: `url("https://themes.pixelstrap.com/multikart/assets/images/vegetables/banner/16.jpg")`,
+        backgroundImage: `url("https://wp.alithemes.com/html/nest/demo/assets/imgs/slider/slider-2.png")`,
         backgroundSize: "cover",
         backgroundPosition: " center center",
         display: "block",
       }}
     >
       <img
-        src="https://themes.pixelstrap.com/multikart/assets/images/vegetables/banner/16.jpg"
+        src="https://wp.alithemes.com/html/nest/demo/assets/imgs/slider/slider-2.png"
         alt=""
         className="bg-img blur-up lazyload"
         style={{ display: "none" }}
@@ -40,5 +42,7 @@ export default function Banner() {
         </div>
       </div>
     </div>
+    </div>
+
   );
 }

@@ -28,6 +28,7 @@ export const Home = () => {
 
   return (
     <>
+      
       <Banner />
       <div className="container categories" style={{ padding: "50px 0px 0px" }}>
         <h3>Featured Categories</h3>
@@ -66,8 +67,8 @@ export const Home = () => {
       </div>
       <div className="container selling">
         <div className="row">
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
-            <h4 class="section-title style-1 mb-30 animated animated">
+          <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
+            <h4 className="section-title style-1 mb-30 animated animated">
               Top Selling
             </h4>
             {users.slice(0, 4).map((item) => (
@@ -80,8 +81,8 @@ export const Home = () => {
               />
             ))}
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
-            <h4 class="section-title style-1 mb-30 animated animated">
+          <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
+            <h4 className="section-title style-1 mb-30 animated animated">
               Trending Products
             </h4>
             {users.slice(4, 8).map((item) => (
@@ -94,11 +95,11 @@ export const Home = () => {
               />
             ))}
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
-            <h4 class="section-title style-1 mb-30 animated animated">
+          <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
+            <h4 className="section-title style-1 mb-30 animated animated">
             Recently added
             </h4>
-            {users.slice(0, 4).map((item) => (
+            {users.slice(8, 12).map((item) => (
               <TopProduct
                 key={item.id}
                 id={item.id}
@@ -108,11 +109,11 @@ export const Home = () => {
               />
             ))}
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
-            <h4 class="section-title style-1 mb-30 animated animated">
+          <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
+            <h4 className="section-title style-1 mb-30 animated animated">
             Top Rated
             </h4>
-            {users.slice(4, 8).map((item) => (
+            {users.slice(12, 16).map((item) => (
               <TopProduct
                 key={item.id}
                 id={item.id}

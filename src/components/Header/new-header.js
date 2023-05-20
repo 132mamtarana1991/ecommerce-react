@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { searchFood, deleteUsers } from "../../redux/action";
+import { searchFood, totalPrice, deleteUsers } from "../../redux/action";
 import {  Link } from "react-router-dom";
 export default function NewHeader() {
   let dispatch = useDispatch();
-  const { basket } = useSelector((state) => ({
+  const { basket, total } = useSelector((state) => ({
     basket: state.data.basket,
+    total: state.data.total,
   }));
   const removeProduct = (id) => {
     dispatch(deleteUsers(id))
   }
+  function getSum(total, num) {
+    return total + Math.round(num);
+  }
 
+  const numbers = basket.map((item) => item.price);
   return (
     <div className="header-fix">
      
@@ -174,23 +179,21 @@ export default function NewHeader() {
                           })}
                          
                          
-                          {/* <li>
+                          <li>
                             <div className="total">
                               <h5>
-                                subtotal : <span>$299.00</span>
+                                subtotal : {numbers.length > 0 ? <span>${numbers.reduce(getSum, 0)}.00</span> :  '0.00'}
                               </h5>
                             </div>
                           </li>
                           <li>
                             <div className="buttons">
-                              <a href="cart.html" className="view-cart">
+                              <Link to="/checkout" className="view-cart">
                                 view cart
-                              </a>{" "}
-                              <Link to={`/single-product/${id}`}  className="checkout">
-                                checkout
-                              </Link>
+                              </Link>{" "}
+                             
                             </div>
-                          </li> */}
+                          </li>
 
                           
                         </ul>

@@ -5,7 +5,7 @@ export default function Category({categories, image, id}) {
 
         <div className="col" key={id} >
           <div  style={{ width: "100%", display: "inline-block", background: '#f2fce4' }}>
-            <a href="category-page(vegetables).html" tabindex="0">
+            <a href="category-page(vegetables).html" >
               <div className={"category-boxes" + ' ' + 'bg' + id}>
                 <div className="img-sec">
                   <img
