@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Product.css";
 import { Link } from "react-router-dom";
-import { FaShoppingBag } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasket } from "../../redux/action";
 
@@ -21,22 +20,22 @@ const Product = ({ id, title, price, rating, detail, specification, img }) => {
     };
     return (
         <>
-            <div class="col-lg-3">
-                <div class="product-card">
-                    <div class="badge">Sale</div>
-                    <div class="product-tumb">
+            <div className="col-lg-3">
+                <div className="product-card">
+                    <div className="badge">Sale</div>
+                    <div className="product-tumb">
                         <img src={img} alt="" />
                     </div>
-                    <div class="product-details">
-                        <span class="product-catagory">Snack</span>
+                    <div className="product-details">
+                        <span className="product-catagory">Snack</span>
                         <h4><Link to={`/single-product/${id}`} className="title">
                             {title}
                         </Link></h4>
-                        <div class="product-bottom-details">
-                            <div class="product-price"><small>$96.00</small>${price}</div>
-                            <div class="product-links">
-                                <a href=""><i class="fa fa-heart"></i></a>
-                                <a onClick={addProduct}><i class="fa fa-shopping-cart"></i></a>
+                        <div className="product-bottom-details">
+                            <div className="product-price"><small>$96.00</small>${price}</div>
+                            <div className="product-links">
+                                <a href=""><i className="fa fa-heart"></i></a>
+                                <a onClick={addProduct}><i className="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>

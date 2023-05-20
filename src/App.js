@@ -9,6 +9,7 @@ import { Checkout } from './pages/Checkout/Checkout';
 import { SingleProduct } from './pages/SingleProduct/SingleProduct';
 import NewHeader from './components/Header/new-header';
 import SubHeader from './components/Header/sub-header';
+
 function App() {
 
     return (

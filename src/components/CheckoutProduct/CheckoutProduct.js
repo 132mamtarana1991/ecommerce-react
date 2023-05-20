@@ -1,7 +1,6 @@
 import React from 'react'
 import './CheckoutProduct.css'
 import { Link } from "react-router-dom";
-import { FaShoppingBag } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { addBasket } from '../../redux/action';
 const CheckoutProduct = ({ id, title, price, rating, detail, specification, img }) => {
@@ -27,7 +26,6 @@ const CheckoutProduct = ({ id, title, price, rating, detail, specification, img 
             <img src={img} />
             <button onClick={removeProduct}>
                 <i>
-                    <FaShoppingBag />
                 </i>
                 Remove To Basket
             </button>

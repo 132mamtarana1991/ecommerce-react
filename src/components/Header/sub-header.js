@@ -3,32 +3,32 @@ import React from 'react'
 export default function SubHeader() {
   return (
     <>
-        <div class="top-header top-header-theme">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="header-contact">
+        <div className="top-header top-header-theme">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="header-contact">
                 <ul>
                   <li>Welcome to Our store Multikart</li>
                   <li>
-                    <a href="become-vendor.html" class="text-white fw-bold">
+                    <a href="become-vendor.html" className="text-white fw-bold">
                       Become a Vendor
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 text-end">
-              <ul class="header-dropdown">
-                <li class="mobile-wishlist pe-0">
+            <div className="col-lg-6 text-end">
+              <ul className="header-dropdown">
+                <li className="mobile-wishlist pe-0">
                   <a href="#">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <i className="fa fa-heart" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="onhover-dropdown mobile-account">
-                  <i class="fa fa-user" aria-hidden="true"></i>
+                <li className="onhover-dropdown mobile-account">
+                  <i className="fa fa-user" aria-hidden="true"></i>
                   My Account
-                  <ul class="onhover-show-div">
+                  <ul className="onhover-show-div">
                     <li>
                       <a href="login.html">Login</a>
                     </li>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { searchFood, deleteUsers } from "../../redux/action";
 import {  Link } from "react-router-dom";
@@ -15,81 +15,81 @@ export default function NewHeader() {
     <div className="header-fix">
      
     
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="main-menu">
-              <div class="menu-left">
-                <div class="brand-logo">
-                  <a href="/">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="main-menu">
+              <div className="menu-left">
+                <div className="brand-logo">
+                  <Link to="/">
                     <img
                       src="https://themes.pixelstrap.com/multikart/assets/images/icon/logo/37.png"
-                      class="img-fluid blur-up lazyloaded"
+                      className="img-fluid blur-up lazyloaded"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
-                <form class="form_search" role="form">
+                <form className="form_search" role="form">
                   <input
                     id="query search-autocomplete"
                     type="search"
                     placeholder="Search any Food..."
-                    class="nav-search nav-search-field"
+                    className="nav-search nav-search-field"
                     aria-expanded="true"
                     onChange={(e) =>dispatch(searchFood(e.target.value))}
                   />
                   <button
                     type="submit"
                     name="nav-submit-button"
-                    class="btn-search"
+                    className="btn-search"
                   >
-                    <i class="ti-search"></i>
+                    <i className="ti-search"></i>
                   </button>
                 </form>
               </div>
-              <div class="menu-right pull-right">
+              <div className="menu-right pull-right">
                 <div>
-                  <div class="icon-nav">
+                  <div className="icon-nav">
                     <ul>
-                      <li class="onhover-div mobile-search d-xl-none d-inline-block">
+                      <li className="onhover-div mobile-search d-xl-none d-inline-block">
                         <div>
                           <img
                             src="../assets/images/icon/search.png"
                             onclick="openSearch()"
-                            class="img-fluid blur-up lazyload"
+                            className="img-fluid blur-up lazyload"
                             alt=""
                           />
-                          <i class="ti-search" onclick="openSearch()"></i>
+                          <i className="ti-search" onclick="openSearch()"></i>
                         </div>
-                        <div id="search-overlay" class="search-overlay">
+                        <div id="search-overlay" className="search-overlay">
                           <div>
                             <span
-                              class="closebtn"
+                              className="closebtn"
                               onclick="closeSearch()"
                               title="Close Overlay"
                             >
                               ×
                             </span>
-                            <div class="overlay-content">
-                              <div class="container">
-                                <div class="row">
-                                  <div class="col-xl-12">
+                            <div className="overlay-content">
+                              <div className="container">
+                                <div className="row">
+                                  <div className="col-xl-12">
                                     <form>
-                                      <div class="form-group">
+                                      <div className="form-group">
                                         <input
                                           type="text"
-                                          class="form-control"
+                                          className="form-control"
                                           id="exampleInputPassword1"
                                           placeholder="Search a Product"
                                         />
                                       </div>
                                       <button
                                         type="submit"
-                                        class="btn btn-primary"
+                                        className="btn btn-primary"
                                       >
-                                        <i class="fa fa-search"></i>
+                                        <i className="fa fa-search"></i>
                                       </button>
                                     </form>
                                   </div>
@@ -99,16 +99,16 @@ export default function NewHeader() {
                           </div>
                         </div>
                       </li>
-                      <li class="onhover-div mobile-setting">
+                      <li className="onhover-div mobile-setting">
                         <div>
                           <img
                             src="https://themes.pixelstrap.com/multikart/assets/images/icon/setting.png"
-                            class="img-fluid blur-up lazyloaded"
+                            className="img-fluid blur-up lazyloaded"
                             alt=""
                           />
-                          <i class="ti-settings"></i>
+                          <i className="ti-settings"></i>
                         </div>
-                        <div class="show-div setting">
+                        <div className="show-div setting">
                           <h6>language</h6>
                           <ul>
                             <li>
@@ -119,7 +119,7 @@ export default function NewHeader() {
                             </li>
                           </ul>
                           <h6>currency</h6>
-                          <ul class="list-inline">
+                          <ul className="list-inline">
                             <li>
                               <a href="#">euro</a>
                             </li>
@@ -135,30 +135,30 @@ export default function NewHeader() {
                           </ul>
                         </div>
                       </li>
-                      <li class="onhover-div mobile-cart">
+                      <li className="onhover-div mobile-cart">
                       <Link to="/checkout" >
                           <img
                             src="https://themes.pixelstrap.com/multikart/assets/images/icon/cart.png"
-                            class="img-fluid blur-up lazyloaded"
+                            className="img-fluid blur-up lazyloaded"
                             alt=""
                           />
-                          <i class="ti-shopping-cart"></i>
+                          <i className="ti-shopping-cart"></i>
                         </Link>
-                        <span class="cart_qty_cls">{basket ? basket.length : 0}</span>
-                        <ul class="show-div shopping-cart">
+                        <span className="cart_qty_cls">{basket ? basket.length : 0}</span>
+                        <ul className="show-div shopping-cart">
                           {basket?.length > 0 && basket.map((item)=>{
                             return(
                               <>
                               <li>
-                              <div class="media">
+                              <div className="media">
                                 <Link to={`/single-product/${item.id}`}>
                                   <img
                                     alt=""
-                                    class="me-3"
+                                    className="me-3"
                                     src={item.img}
                                   />
                                 </Link>
-                                <div class="media-body">
+                                <div className="media-body">
                                   <Link to={`/single-product/${item.id}`}>
                                     <h4>{item.title}</h4>
                                   </Link>
@@ -167,9 +167,9 @@ export default function NewHeader() {
                                   </h4>
                                 </div>
                               </div>
-                              <div class="close-circle">
+                              <div className="close-circle">
                                 <button  onClick={() => removeProduct(item.id)}>
-                                  <i class="fa fa-times" aria-hidden="true"></i>
+                                  <i className="fa fa-times" aria-hidden="true"></i>
                                 </button>
                               </div>
                             </li>
@@ -179,18 +179,18 @@ export default function NewHeader() {
                          
                          
                           {/* <li>
-                            <div class="total">
+                            <div className="total">
                               <h5>
                                 subtotal : <span>$299.00</span>
                               </h5>
                             </div>
                           </li>
                           <li>
-                            <div class="buttons">
-                              <a href="cart.html" class="view-cart">
+                            <div className="buttons">
+                              <a href="cart.html" className="view-cart">
                                 view cart
                               </a>{" "}
-                              <Link to={`/single-product/${id}`}  class="checkout">
+                              <Link to={`/single-product/${id}`}  className="checkout">
                                 checkout
                               </Link>
                             </div>
