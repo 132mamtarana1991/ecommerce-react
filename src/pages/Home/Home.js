@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadUsers } from "../../redux/action";
+import { loadUsers, selectFood } from "../../redux/action";
 import Product from "../../components/Product/Product";
 import Banner from "../../components/banner";
 import Category from "../../components/category";
@@ -9,31 +9,113 @@ import TopProduct from "../../components/top-product";
 
 export const Home = () => {
   let dispatch = useDispatch();
-  const { users, search } = useSelector((state) => ({
+  const [numberOfitemsShown, setNumberOfItemsToShown] = useState(7);
+  const [numberOfFoodShown, setNumberOfFoodShown] = useState(10);
+  const [currentCategories, setCurrentCategories] = useState([]);
+  const [foodName, setFoodName] = useState([]);
+
+  const { users, search, selectfood } = useSelector((state) => ({
     users: state.data.users,
     search: state.data.search,
+    selectfood: state.data.selectfood,
   }));
+
   useEffect(() => {
     dispatch(loadUsers());
   }, []);
 
-  const [filteredCountries, setFilteredCountries] = useState([]);
+  const result = [];
+  const map = new Map();
+  for (const item of users) {
+    if (!map.has(item.categories.toLowerCase())) {
+      map.set(item.categories.toLowerCase(), true);
+      result.push({
+        id: item.id,
+        categories: item.categories,
+        image: item.image,
+        title: item.title,
+      });
+    }
+  }
+
   useEffect(() => {
-    setFilteredCountries(
+    setFoodName(
       users.filter((item) =>
         item.title.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search, users]);
 
+  useEffect(() => {
+    if (selectfood === "all" && result) {
+      return setCurrentCategories(result.filter((item) => item?.categories));
+    } else {
+      return setCurrentCategories(
+        result.filter((item) =>
+          item?.categories?.toLowerCase().includes(selectfood?.toLowerCase())
+        )
+      );
+    }
+  }, [selectfood, users]);
+
+  const changeFruit = (newFruit) => {
+    dispatch(selectFood(newFruit));
+  };
+
+  const showMore = () => {
+    if (numberOfitemsShown === currentCategories.length) {
+      setNumberOfItemsToShown(7);
+    } else if (numberOfitemsShown + 7 <= currentCategories.length) {
+      setNumberOfItemsToShown(numberOfitemsShown + 7);
+    } else {
+      setNumberOfItemsToShown(currentCategories.length);
+    }
+  };
+
+
+  const showMoreProduct = () => {
+    if (numberOfFoodShown === foodName.length) {
+      setNumberOfFoodShown(10);
+    } else if (numberOfFoodShown + 5 <= foodName.length) {
+      setNumberOfFoodShown(numberOfFoodShown + 5);
+    } else {
+      setNumberOfFoodShown(foodName.length);
+    }
+  };
   return (
     <>
-      
       <Banner />
       <div className="container categories" style={{ padding: "50px 0px 0px" }}>
-        <h3>Featured Categories</h3>
-        <div className="row ">
-          {filteredCountries.slice(0, 7).map((item) => (
+        <div className="flex">
+          <div className="flex-haeding">
+            <h3>Featured Categories</h3>
+            <select
+              onChange={(event) => changeFruit(event.target.value)}
+              value={selectfood}
+            >
+              <option value={"all"}>{"All"}</option>
+              {result.length &&
+                result?.map((item, ind) => {
+                  return (
+                    <option key={ind} value={item.categories}>
+                      {item.categories}
+                    </option>
+                  );
+                })}
+            </select>
+          </div>
+          {currentCategories.length < 6 ? (
+            ""
+          ) : (
+            <button className="button button-add-to-cart" onClick={showMore}>
+              {numberOfitemsShown === currentCategories.length
+                ? "Less More"
+                : "See More"}
+            </button>
+          )}
+        </div>
+        <div className="row col-set">
+          {currentCategories?.slice(0, numberOfitemsShown)?.map((item) => (
             <Category
               key={item.id}
               image={item.image}
@@ -46,8 +128,9 @@ export const Home = () => {
       <About />
       <div className="container ProductsAll">
         <h3 style={{ marginTop: "70px" }}>Popular Products</h3>
+
         <div className=" row">
-          {filteredCountries.slice(10, 19).map((item) => (
+          {foodName.slice(0, numberOfFoodShown).map((item) => (
             <Product
               key={item.id}
               id={item.id}
@@ -60,6 +143,9 @@ export const Home = () => {
             />
           ))}
         </div>
+        <button className="button button-add-to-cart" onClick={showMoreProduct}>
+          {numberOfFoodShown === foodName.length ? "Less More" : "See More"}
+        </button>
       </div>
       <div className="container" style={{ margin: "60px auto" }}>
         {" "}
@@ -97,7 +183,7 @@ export const Home = () => {
           </div>
           <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
             <h4 className="section-title style-1 mb-30 animated animated">
-            Recently added
+              Recently added
             </h4>
             {users.slice(8, 12).map((item) => (
               <TopProduct
@@ -111,7 +197,7 @@ export const Home = () => {
           </div>
           <div className="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
             <h4 className="section-title style-1 mb-30 animated animated">
-            Top Rated
+              Top Rated
             </h4>
             {users.slice(12, 16).map((item) => (
               <TopProduct

@@ -33,7 +33,7 @@ export default function Banner() {
                   alive with diamonds, rubies, tanzanite, citrines, emeralds,
                   rubellite, sapphires
                 </p>
-                <a href="#" className="btn btn-solid animated rounded-3 fadeInUp">
+                <a href="#" className="button button-add-to-cart">
                   shop now
                 </a>
               </div>

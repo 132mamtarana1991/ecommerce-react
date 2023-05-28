@@ -9,6 +9,7 @@ const initialState = {
   total: 0,
   count: 0,
   search: "",
+  selectfood: "",
 
   usersAdmin: [],
   userAdmin: {},
@@ -22,7 +23,12 @@ const basketReducer = (state = initialState, action) => {
         search: action.payload,
         loading: false,
       };
-
+      case types.SELECT_FOOD:
+        return {
+          ...state,
+          selectfood: action.payload,
+          loading: false,
+        };
       case types.GET_SINGLE_USER: return {
         ...state,
         user: action.payload,

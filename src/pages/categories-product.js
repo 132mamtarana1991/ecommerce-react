@@ -22,7 +22,7 @@ export default function CategoriesProduct() {
       <div className="archive-header">
         <div className="row align-items-center">
           <div className="col-xl-3">
-            <h1 className="mb-15">{location?.pathname?.split("/")[2]}</h1>
+            <h2 className="mb-15">{location?.pathname?.split("/")[2]}</h2>
             <div className="breadcrumb">
               <Link to="/" >
                 <i className="fa fa-home mr-2"></i>Home

@@ -51,6 +51,10 @@ export const searchFood = (item) => ({
   payload: item,
 });
 
+export const selectFood = (item) => ({
+  type: types.SELECT_FOOD,
+  payload: item,
+});
 
 
 
