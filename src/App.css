@@ -21757,7 +21757,8 @@ a.btn.mb-20.w-100 {
     }
 }
 a.button.button-add-to-cart {
-    position: relative;
+    position: absolute;
+    z-index: 999999;
     padding: 0px 20px;
     border-radius: 5px;
     height: 50px;
