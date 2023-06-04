@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export const loadUsers = () => async (dispatch) => {
-  const result = await axios.get("http://localhost:3000/posts");
+  const result = await axios.get("http://localhost:5000/products");
   dispatch({
     type: types.GET_USERS,
     payload: result.data,
@@ -11,7 +11,7 @@ export const loadUsers = () => async (dispatch) => {
 };
 
 export const getSingleuser = (id) => async (dispatch) => {
-  const result = await axios.get(`http://localhost:3000/posts/${id}`);
+  const result = await axios.get(`http://localhost:5000/product/${id}`);
   dispatch({
     type: types.GET_SINGLE_USER,
     payload: result.data,

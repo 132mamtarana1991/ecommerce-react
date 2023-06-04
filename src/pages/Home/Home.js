@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loadUsers, selectFood } from "../../redux/action";
 import Product from "../../components/Product/Product";
@@ -30,7 +30,7 @@ export const Home = () => {
     if (!map.has(item.categories.toLowerCase())) {
       map.set(item.categories.toLowerCase(), true);
       result.push({
-        id: item.id,
+        id: item._id,
         categories: item.categories,
         image: item.image,
         title: item.title,
@@ -117,9 +117,9 @@ export const Home = () => {
         <div className="row col-set">
           {currentCategories?.slice(0, numberOfitemsShown)?.map((item) => (
             <Category
-              key={item.id}
+              key={item._id}
               image={item.image}
-              id={item.id}
+              id={item._id}
               categories={item.categories}
             />
           ))}
@@ -132,8 +132,8 @@ export const Home = () => {
         <div className=" row">
           {foodName.slice(0, numberOfFoodShown).map((item) => (
             <Product
-              key={item.id}
-              id={item.id}
+              key={item._id}
+              id={item._id}
               title={item.title}
               price={item.price}
               rating={item.rating}
@@ -159,8 +159,8 @@ export const Home = () => {
             </h4>
             {users.slice(0, 4).map((item) => (
               <TopProduct
-                key={item.id}
-                id={item.id}
+                key={item._id}
+                id={item._id}
                 title={item.title}
                 price={item.price}
                 img={item.image}
@@ -173,8 +173,8 @@ export const Home = () => {
             </h4>
             {users.slice(4, 8).map((item) => (
               <TopProduct
-                key={item.id}
-                id={item.id}
+                key={item._id}
+                id={item._id}
                 title={item.title}
                 price={item.price}
                 img={item.image}
@@ -187,8 +187,8 @@ export const Home = () => {
             </h4>
             {users.slice(8, 12).map((item) => (
               <TopProduct
-                key={item.id}
-                id={item.id}
+                key={item._id}
+                id={item._id}
                 title={item.title}
                 price={item.price}
                 img={item.image}
@@ -201,8 +201,8 @@ export const Home = () => {
             </h4>
             {users.slice(12, 16).map((item) => (
               <TopProduct
-                key={item.id}
-                id={item.id}
+                key={item._id}
+                id={item._id}
                 title={item.title}
                 price={item.price}
                 img={item.image}
