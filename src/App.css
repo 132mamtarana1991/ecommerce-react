@@ -20974,7 +20974,7 @@ ul.header-dropdown {
 .header-fix {
     position: sticky;
     top: 0;
-    z-index: 11;
+    z-index: 1;
     background: #fff;
 }
 .spinner-wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.95); z-index: 999999; background: #c5d0e2; }
@@ -21773,4 +21773,7 @@ a.button.button-add-to-cart {
     align-items: center;
     width: 124px;
     text-align: center;
+}
+ul.onhover-show-div li {
+    color: #545454 !IMPORTANT;
 }

@@ -1,9 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom";
 export default function SubHeader() {
+  const auth = localStorage.getItem("user");
+  const authParse = JSON.parse(auth);
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+  };
   return (
     <>
-        <div className="top-header top-header-theme">
+      <div className="top-header top-header-theme">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -21,20 +27,24 @@ export default function SubHeader() {
             <div className="col-lg-6 text-end">
               <ul className="header-dropdown">
                 <li className="mobile-wishlist pe-0">
-                  <a href="#">
-                    <i className="fa fa-heart" aria-hidden="true"></i>
-                  </a>
+                  <i className="fa fa-heart" aria-hidden="true"></i>
                 </li>
                 <li className="onhover-dropdown mobile-account">
                   <i className="fa fa-user" aria-hidden="true"></i>
-                  My Account
+                  My Account {authParse && authParse.name}
                   <ul className="onhover-show-div">
-                    <li>
-                      <a href="login.html">Login</a>
-                    </li>
-                    <li>
-                      <a href="register.html">register</a>
-                    </li>
+                    {auth && auth.length ? (
+                      <li onClick={handleLogout}>logout</li>
+                    ) : (
+                      <>
+                        <li>
+                          <Link to="/login">Login</Link>
+                        </li>
+                        <li>
+                          <Link to="/register">register</Link>
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </li>
               </ul>
@@ -43,5 +53,5 @@ export default function SubHeader() {
         </div>
       </div>
     </>
-  )
+  );
 }

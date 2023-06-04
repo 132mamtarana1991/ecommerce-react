@@ -13,27 +13,42 @@ const initialState = {
 
   usersAdmin: [],
   userAdmin: {},
+  registerUser: {},
+  loginUser: {},
 };
 
 const basketReducer = (state = initialState, action) => {
   switch (action.type) {
+    case types.REGISTER_USER:
+      return {
+        ...state,
+        registerUser: action.payload,
+        loading: false,
+      };
+    case types.LOGIN_USER:
+      return {
+        ...state,
+        loginUser: action.payload,
+        loading: false,
+      };   
     case types.SEARCH:
       return {
         ...state,
         search: action.payload,
         loading: false,
       };
-      case types.SELECT_FOOD:
-        return {
-          ...state,
-          selectfood: action.payload,
-          loading: false,
-        };
-      case types.GET_SINGLE_USER: return {
+    case types.SELECT_FOOD:
+      return {
+        ...state,
+        selectfood: action.payload,
+        loading: false,
+      };
+    case types.GET_SINGLE_USER:
+      return {
         ...state,
         user: action.payload,
-        loading: false
-    }
+        loading: false,
+      };
     case types.GET_USERS:
       return {
         ...state,
@@ -76,30 +91,22 @@ const basketReducer = (state = initialState, action) => {
         count: state.count - 1 > 0 ? state.count - 1 : 1,
       };
 
-
-
-
-
-   
     case types.ADD_USER:
     case types.USER_UPDATE_USER:
-    return {
+      return {
         ...state,
-        loading: false
-    }
- 
-    case types.GET_SINGLE_ADMIN: return {
+        loading: false,
+      };
+
+    case types.GET_SINGLE_ADMIN:
+      return {
         ...state,
         user: action.payload,
-        loading: false
-    }
-    case types.DELETE_ADMIN: 
+        loading: false,
+      };
+    case types.DELETE_ADMIN:
 
-
-
-
-
-
+    // eslint-disable-next-line no-fallthrough
     default:
       return state;
   }

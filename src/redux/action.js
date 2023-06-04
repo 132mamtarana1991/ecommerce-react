@@ -1,5 +1,6 @@
 import * as types from "./actionType";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const loadUsers = () => async (dispatch) => {
   const result = await axios.get("http://localhost:3000/posts");
@@ -12,7 +13,7 @@ export const loadUsers = () => async (dispatch) => {
 export const getSingleuser = (id) => async (dispatch) => {
   const result = await axios.get(`http://localhost:3000/posts/${id}`);
   dispatch({
-    type:  types.GET_SINGLE_USER,
+    type: types.GET_SINGLE_USER,
     payload: result.data,
   });
 };
@@ -56,10 +57,6 @@ export const selectFood = (item) => ({
   payload: item,
 });
 
-
-
-
-
 // Admin
 export const DeleteAdmin = (id) => async (dispatch) => {
   await axios.delete(`http://localhost:3000/posts/${id}`);
@@ -70,9 +67,8 @@ export const DeleteAdmin = (id) => async (dispatch) => {
   dispatch(loadUsers());
 };
 
-
 export const addUsers = (user) => async (dispatch) => {
- await axios.post("http://localhost:3000/posts/", user);
+  await axios.post("http://localhost:3000/posts/", user);
   dispatch({
     type: types.ADD_USER,
     payload: user,
@@ -83,16 +79,39 @@ export const addUsers = (user) => async (dispatch) => {
 export const getSingleAdmin = (id) => async (dispatch) => {
   const result = await axios.get(`http://localhost:3000/users/${id}`);
   dispatch({
-    type:  types.GET_SINGLE_ADMIN,
+    type: types.GET_SINGLE_ADMIN,
     payload: result.data,
   });
 };
 
-export const updateSingleuser = (user,id) => async (dispatch) => {
-  const result = await axios.put(`http://localhost:3000/users/${id}`,user)
+export const updateSingleuser = (user, id) => async (dispatch) => {
+  const result = await axios.put(`http://localhost:3000/users/${id}`, user);
   dispatch({
-    type:  types.GET_SINGLE_USER,
+    type: types.GET_SINGLE_USER,
     payload: result.data,
   });
   dispatch(loadUsers());
+};
+
+export const registerUser = (registerUser) => async (dispatch) => {
+  await axios.post("http://localhost:5000/register/", registerUser);
+  dispatch({
+    type: types.REGISTER_USER,
+    payload: registerUser,
+  });
+};
+
+export const loginUser = (loginUser) => async (dispatch) => {
+  let result = await axios.post("http://localhost:5000/login/", loginUser);
+  console.log(result, "result");
+  if (result?.data?.email) {
+    localStorage.setItem("user", JSON.stringify(result?.data));
+
+  } else {
+    alert("no found user please add corrert user");
+  }
+  dispatch({
+    type: types.LOGIN_USER,
+    payload: loginUser,
+  });
 };

@@ -13,3 +13,6 @@ export const ADD_USER = "ADD_USER"
 export const GET_SINGLE_ADMIN = "GET_SINGLE_ADMIN"
 export const USER_UPDATE_USER = "USER_UPDATE_USER"
 export const DELETE_ADMIN = "DELETE_ADMIN"
+
+export const REGISTER_USER = "REGISTER_USER"
+export const LOGIN_USER = "LOGIN_USER"
