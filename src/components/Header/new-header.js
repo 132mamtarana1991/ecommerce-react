@@ -8,6 +8,7 @@ export default function NewHeader() {
     basket: state.data.basket,
     total: state.data.total,
   }));
+  console.log(basket,'basket')
   const removeProduct = (id) => {
     dispatch(deleteUsers(id))
   }
@@ -151,6 +152,7 @@ export default function NewHeader() {
                         <ul className="show-div shopping-cart">
                           {basket?.length > 0 && basket.map((item, index)=>{
                             return(
+                          
                               <li key={index}>
                               <div className="media">
                                 <Link to={`/single-product/${item.id}`}>

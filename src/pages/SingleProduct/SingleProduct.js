@@ -21,7 +21,7 @@ export const SingleProduct = () => {
 
   const addProduct = () => {
     const item = {
-      id: singleProductSelect.id,
+      id: singleProductSelect._id,
       img: singleProductSelect.image,
       price: singleProductSelect.price,
       detail: singleProductSelect.detail,
