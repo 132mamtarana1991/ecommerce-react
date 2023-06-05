@@ -26,7 +26,6 @@ export const SingleProduct = () => {
       price: singleProductSelect.price,
       detail: singleProductSelect.detail,
       rating: singleProductSelect.rating,
-      specification: singleProductSelect.specification,
       title: singleProductSelect.title,
     };
     dispatch(addBasket(item));

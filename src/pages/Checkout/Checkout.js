@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import SubTotal from "../../components/sub-total";
 export const Checkout = () => {
   const { basket, total, count } = useSelector((state) => state.data);
+  console.log(basket,'basket')
   let dispatch = useDispatch();
   const numbers = basket.map((item) => item.price);
   const removeProduct = (id) => {
@@ -37,6 +38,7 @@ export const Checkout = () => {
   let decreaseBtn = () => {
     dispatch(decreaseCounter());
   };
+  console.log(total,'total')
   return (
     <>
       <div className="page-header breadcrumb-wrap">
@@ -49,7 +51,7 @@ export const Checkout = () => {
           </div>
         </div>
       </div>
-   {basket.length > 0 ? 
+      {basket && basket?.length > 0 ? 
       <div className="container">
         <div className="row table ">
           <div className="table-responsive shopping-summery col-lg-8">
@@ -66,8 +68,8 @@ export const Checkout = () => {
                 </tr>
               </thead>
               <tbody>
-                {basket &&
-                  basket.map((item, ind) => (
+                {basket && basket?.length > 0 &&
+                  basket?.map((item, ind) => (
                     <tr className="pt-30" key={ind}>
                       <td className="image product-thumbnail pt-40">
                         <img src={item.img} alt="#" />
@@ -128,7 +130,7 @@ export const Checkout = () => {
             </table>
           </div>
           <div className="col-lg-4">
-           <SubTotal total={total}/>
+          {total && total.length > 0 && <SubTotal total={total}/>} 
           </div>
         </div>
       </div>

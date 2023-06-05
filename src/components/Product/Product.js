@@ -4,7 +4,7 @@ import { addBasket } from "../../redux/action";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
   
-const Product = ({ id, title, price, rating, detail, specification, img }) => {
+const Product = ({ id, title, price, rating, detail,  img }) => {
   let dispatch = useDispatch();
   const addProduct = () => {
     const item = {
@@ -13,7 +13,6 @@ const Product = ({ id, title, price, rating, detail, specification, img }) => {
       price,
       rating,
       detail,
-      specification,
       img,
     };
     toast("Product Add");

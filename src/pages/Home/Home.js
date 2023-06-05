@@ -138,7 +138,6 @@ export const Home = () => {
               price={item.price}
               rating={item.rating}
               detail={item.detail}
-              specification={item.specification}
               img={item.image}
             />
           ))}

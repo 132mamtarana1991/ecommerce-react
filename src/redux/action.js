@@ -1,9 +1,10 @@
 import * as types from "./actionType";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 export const loadUsers = () => async (dispatch) => {
-  const result = await axios.get("http://localhost:5000/products");
+  const result = await axios.get("http://localhost:5000/products",{
+    headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
+  });
   dispatch({
     type: types.GET_USERS,
     payload: result.data,
@@ -11,7 +12,9 @@ export const loadUsers = () => async (dispatch) => {
 };
 
 export const getSingleuser = (id) => async (dispatch) => {
-  const result = await axios.get(`http://localhost:5000/product/${id}`);
+  const result = await axios.get(`http://localhost:5000/product/${id}`,{
+    headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
+  });
   dispatch({
     type: types.GET_SINGLE_USER,
     payload: result.data,
@@ -103,10 +106,9 @@ export const registerUser = (registerUser) => async (dispatch) => {
 
 export const loginUser = (loginUser) => async (dispatch) => {
   let result = await axios.post("http://localhost:5000/login/", loginUser);
-  console.log(result, "result");
-  if (result?.data?.email) {
-    localStorage.setItem("user", JSON.stringify(result?.data));
-
+  if (result?.data?.auth) {
+    localStorage.setItem("user", JSON.stringify(result?.data?.user));
+    localStorage.setItem("token", JSON.stringify(result?.data?.auth));
   } else {
     alert("no found user please add corrert user");
   }

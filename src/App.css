@@ -6431,7 +6431,7 @@ header.header-style .onhover-dropdown:before {
 .onhover-dropdown .onhover-show-div {
     top: 50px;
     position: absolute;
-    z-index: 10;
+    z-index: 99;
     background-color: #fff;
     -webkit-transition: all linear 0.3s;
     transition: all linear 0.3s;
@@ -20974,7 +20974,7 @@ ul.header-dropdown {
 .header-fix {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 33;
     background: #fff;
 }
 .spinner-wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.95); z-index: 999999; background: #c5d0e2; }
@@ -21758,7 +21758,7 @@ a.btn.mb-20.w-100 {
 }
 a.button.button-add-to-cart {
     position: absolute;
-    z-index: 999999;
+    z-index: 9;
     padding: 0px 20px;
     border-radius: 5px;
     height: 50px;
@@ -21771,7 +21771,6 @@ a.button.button-add-to-cart {
     background-color: #3BB77E;
     display: flex;
     align-items: center;
-    width: 124px;
     text-align: center;
 }
 ul.onhover-show-div li {
