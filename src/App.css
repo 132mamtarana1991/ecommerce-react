@@ -21776,3 +21776,8 @@ a.button.button-add-to-cart {
 ul.onhover-show-div li {
     color: #545454 !IMPORTANT;
 }
+button.text-body {
+    border: none;
+    background: transparent;
+    color: red;
+}
