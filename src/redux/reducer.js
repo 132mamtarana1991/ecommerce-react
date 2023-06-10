@@ -79,21 +79,7 @@ const basketReducer = (state = initialState, action) => {
         ...state,
         total: action.payload,
       };
-    case types.INCREASE_COUNTER:
-      if (state.id !== action.id) {
-        return state;
-      }
-      return {
-        ...state,
-        count: state.count+1
-      };
-
-    case types.DECREASE_COUNTER:
-      return {
-        ...state,
-        count: state.count - 1 > 0 ? state.count - 1 : 1,
-      };
-
+ 
     case types.ADD_USER:
     case types.USER_UPDATE_USER:
       return {

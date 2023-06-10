@@ -16,7 +16,7 @@ const Product = ({ id, title, price, rating, detail,  img }) => {
       img,
     };
     toast("Product Add");
-    dispatch(addBasket(item));
+    dispatch(addBasket({ ...item, quantity: 1 }));
   };
   return (
     <>

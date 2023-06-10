@@ -60,19 +60,7 @@ export const totalPrice = (total) => ({
   type: types.TOTAL_PRICE,
   payload: total,
 });
-export const increaseCounter = (id) => {
-  return {
-    type: types.INCREASE_COUNTER,
-    payload: id,
-  };
-};
 
-export const decreaseCounter = (id) => {
-  return {
-    type: types.DECREASE_COUNTER,
-    payload: id,
-  };
-};
 export const searchFood = (item) => ({
   type: types.SEARCH,
   payload: item,
