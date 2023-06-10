@@ -7,7 +7,7 @@ export const Checkout = () => {
   let dispatch = useDispatch();
   const auth = localStorage.getItem("user");
   const authParse = JSON.parse(auth);
-  const [CART, setCART] = useState([]);
+  const [cartProduct, setAddProduct] = useState([]);
   const { basket } = useSelector((state) => state.data);
 
   useEffect(() => {
@@ -20,10 +20,10 @@ export const Checkout = () => {
 
 
   useEffect(() => {
-    setCART(basket);
+    setAddProduct(basket);
   }, [basket]);
 
- const totalPrice = CART?.length > 0 && CART?.map((item) => item.price * item.quantity).reduce((total, value) => total + value, 0)
+ const totalPrice = cartProduct?.length > 0 && cartProduct?.map((item) => item.price * item.quantity).reduce((total, value) => total + value, 0)
 
   return (
     <>
@@ -37,7 +37,7 @@ export const Checkout = () => {
           </div>
         </div>
       </div>
-      {CART && CART?.length > 0 ? (
+      {cartProduct && cartProduct?.length > 0 ? (
         <div className="container">
           <div className="row table ">
             <div className="table-responsive shopping-summery col-lg-8">
@@ -53,8 +53,8 @@ export const Checkout = () => {
                     </th>
                   </tr>
                 </thead>
-                {CART?.length > 0 &&
-                  CART?.map((cartItem, cartindex) => (
+                {cartProduct?.length > 0 &&
+                  cartProduct?.map((cartItem, cartindex) => (
                     <tbody>
                       <tr className="pt-30" key={cartindex}>
                         <td className="image product-thumbnail pt-40">
@@ -79,19 +79,19 @@ export const Checkout = () => {
                             <button
                               onClick={() => {
                                 const _CART =
-                                  CART &&
-                                  CART.map((item, index) => {
+                                  cartProduct &&
+                                  cartProduct.map((item, index) => {
                                     return cartindex === index
                                       ? {
                                           ...item,
                                           quantity:
-                                            item.quantity > 0
+                                            item.quantity > 1
                                               ? item.quantity - 1
-                                              : 0,
+                                              : 1,
                                         }
                                       : item;
                                   });
-                                setCART(_CART);
+                                setAddProduct(_CART);
                               }}
                             >
                               -
@@ -100,13 +100,13 @@ export const Checkout = () => {
                             <button
                               onClick={() => {
                                 const _CART =
-                                  CART &&
-                                  CART.map((item, index) => {
+                                  cartProduct &&
+                                  cartProduct.map((item, index) => {
                                     return cartindex === index
                                       ? { ...item, quantity: item.quantity + 1 }
                                       : item;
                                   });
-                                setCART(_CART);
+                                setAddProduct(_CART);
                               }}
                             >
                               +
@@ -132,7 +132,7 @@ export const Checkout = () => {
               </table>
             </div>
             <div className="col-lg-4">
-              <div className="border p-md-4 cart-totals ml-30">
+              <div className="border p-md-4 cartProduct-totals ml-30">
                 <div className="table-responsive">
                   <table className="table no-border">
                     <tbody>

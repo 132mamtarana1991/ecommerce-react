@@ -2,8 +2,10 @@ import * as types from "./actionType";
 import axios from "axios";
 
 export const allProduct = () => async (dispatch) => {
-  const result = await axios.get("http://localhost:5000/products",{
-    headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
+  const result = await axios.get("http://localhost:5000/products", {
+    headers: {
+      authorization: "bearer " + JSON.parse(localStorage.getItem("token")),
+    },
   });
   dispatch({
     type: types.GET_USERS,
@@ -12,8 +14,10 @@ export const allProduct = () => async (dispatch) => {
 };
 
 export const getSingleProduct = (id) => async (dispatch) => {
-  const result = await axios.get(`http://localhost:5000/product/${id}`,{
-    headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
+  const result = await axios.get(`http://localhost:5000/product/${id}`, {
+    headers: {
+      authorization: "bearer " + JSON.parse(localStorage.getItem("token")),
+    },
   });
   dispatch({
     type: types.GET_SINGLE_USER,
@@ -43,7 +47,6 @@ export const loginUser = (loginUser) => async (dispatch) => {
   });
 };
 
-
 export const deleteUsers = (id) => async (dispatch) => {
   dispatch({
     type: types.DELETE_USER,
@@ -65,16 +68,6 @@ export const selectFood = (item) => ({
   type: types.SELECT_FOOD,
   payload: item,
 });
-
-
-
-
-
-
-
-
-
-
 
 
 // Admin
@@ -112,4 +105,3 @@ export const updateSingleUser = (user, id) => async (dispatch) => {
   });
   dispatch(allProduct());
 };
-

@@ -29,7 +29,7 @@ const basketReducer = (state = initialState, action) => {
         ...state,
         loginUser: action.payload,
         loading: false,
-      };   
+      };
     case types.SEARCH:
       return {
         ...state,
@@ -73,7 +73,7 @@ const basketReducer = (state = initialState, action) => {
         ...state,
         basket: updateBasket,
       };
- 
+
     case types.ADD_USER:
     case types.USER_UPDATE_USER:
       return {
