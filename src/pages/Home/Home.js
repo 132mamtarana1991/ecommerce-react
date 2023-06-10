@@ -115,11 +115,11 @@ export const Home = () => {
           )}
         </div>
         <div className="row col-set">
-          {currentCategories?.slice(0, numberOfitemsShown)?.map((item) => (
+          {currentCategories?.slice(0, numberOfitemsShown)?.map((item, index) => (
             <Category
-              key={item._id}
-              image={item.image}
+              key={index}
               id={item._id}
+              image={item.image}
               categories={item.categories}
             />
           ))}

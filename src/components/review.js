@@ -4,9 +4,9 @@ export default function Review() {
   return (
     <div className="review-all container">
       <nav className="container">
-        <div ClassName="nav nav-tabs" id="nav-tab" role="tablist">
+        <div className="nav nav-tabs" id="nav-tab" role="tablist">
           <a
-            ClassName="nav-item nav-link active"
+            className="nav-item nav-link active"
             id="nav-home-tab"
             data-toggle="tab"
             href="#nav-home"
@@ -17,7 +17,7 @@ export default function Review() {
             Description
           </a>
           <a
-            ClassName="nav-item nav-link"
+            className="nav-item nav-link"
             id="nav-profile-tab"
             data-toggle="tab"
             href="#nav-profile"
@@ -28,7 +28,7 @@ export default function Review() {
             Additional info
           </a>
           <a
-            ClassName="nav-item nav-link"
+            className="nav-item nav-link"
             id="nav-contact-tab"
             data-toggle="tab"
             href="#nav-contact"
@@ -40,15 +40,15 @@ export default function Review() {
           </a>
         </div>
       </nav>
-      <div ClassName="tab-content container" id="nav-tabContent">
+      <div className="tab-content container" id="nav-tabContent">
         <div
-          ClassName="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
         >
-          <div ClassName="tab-pane fade active show" id="Description">
-            <div ClassName="">
+          <div className="tab-pane fade active show" id="Description">
+            <div className="">
               <p>
                 Uninhibited carnally hired played in whimpered dear gorilla
                 koala depending and much yikes off far quetzal goodness and from
@@ -64,7 +64,7 @@ export default function Review() {
                 the bucolically hey precarious goldfinch mastodon goodness
                 gnashed a jellyfish and one however because.
               </p>
-              <ul ClassName="product-more-infor mt-30">
+              <ul className="product-more-infor mt-30">
                 <li>
                   <span>Type Of Packing</span> Bottle
                 </li>
@@ -81,7 +81,7 @@ export default function Review() {
                   <span>Piece In One</span> Carton
                 </li>
               </ul>
-              <hr ClassName="wp-block-separator is-style-dots" />
+              <hr className="wp-block-separator is-style-dots" />
               <p>
                 Laconic overheard dear woodchuck wow this outrageously taut
                 beaver hey hello far meadowlark imitatively egregiously hugged
@@ -91,8 +91,8 @@ export default function Review() {
                 where crud then below after jeez enchanting drunkenly more much
                 wow callously irrespective limpet.
               </p>
-              <h4 ClassName="mt-30">Packaging &amp; Delivery</h4>
-              <hr ClassName="wp-block-separator is-style-wide" />
+              <h4 className="mt-30">Packaging &amp; Delivery</h4>
+              <hr className="wp-block-separator is-style-wide" />
               <p>
                 Less lion goodness that euphemistically robin expeditiously
                 bluebird smugly scratched far while thus cackled sheepishly
@@ -110,13 +110,13 @@ export default function Review() {
                 grimaced wildly some wow and rose jeepers outgrew lugubrious
                 luridly irrationally attractively dachshund.
               </p>
-              <h4 ClassName="mt-30">Suggested Use</h4>
-              <ul ClassName="product-more-infor mt-30">
+              <h4 className="mt-30">Suggested Use</h4>
+              <ul className="product-more-infor mt-30">
                 <li>Refrigeration not necessary.</li>
                 <li>Stir before serving</li>
               </ul>
-              <h4 ClassName="mt-30">Other Ingredients</h4>
-              <ul ClassName="product-more-infor mt-30">
+              <h4 className="mt-30">Other Ingredients</h4>
+              <ul className="product-more-infor mt-30">
                 <li>Organic raw pecans, organic raw cashews.</li>
                 <li>
                   This butter was produced using a LTG (Low Temperature
@@ -127,8 +127,8 @@ export default function Review() {
                   process peanuts, gluten, dairy or soy
                 </li>
               </ul>
-              <h4 ClassName="mt-30">Warnings</h4>
-              <ul ClassName="product-more-infor mt-30">
+              <h4 className="mt-30">Warnings</h4>
+              <ul className="product-more-infor mt-30">
                 <li>
                   Oil separation occurs naturally. May contain pieces of shell.
                 </li>
@@ -137,92 +137,92 @@ export default function Review() {
           </div>
         </div>
         <div
-          ClassName="tab-pane fade"
+          className="tab-pane fade"
           id="nav-profile"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
         >
-         <table ClassName="font-md">
+         <table className="font-md">
                                                     <tbody>
-                                                        <tr ClassName="stand-up">
+                                                        <tr className="stand-up">
                                                             <th>Stand Up</th>
                                                             <td>
                                                                 <p>35″L x 24″W x 37-45″H(front to back wheel)</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="folded-wo-wheels">
+                                                        <tr className="folded-wo-wheels">
                                                             <th>Folded (w/o wheels)</th>
                                                             <td>
                                                                 <p>32.5″L x 18.5″W x 16.5″H</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="folded-w-wheels">
+                                                        <tr className="folded-w-wheels">
                                                             <th>Folded (w/ wheels)</th>
                                                             <td>
                                                                 <p>32.5″L x 24″W x 18.5″H</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="door-pass-through">
+                                                        <tr className="door-pass-through">
                                                             <th>Door Pass Through</th>
                                                             <td>
                                                                 <p>24</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="frame">
+                                                        <tr className="frame">
                                                             <th>Frame</th>
                                                             <td>
                                                                 <p>Aluminum</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="weight-wo-wheels">
+                                                        <tr className="weight-wo-wheels">
                                                             <th>Weight (w/o wheels)</th>
                                                             <td>
                                                                 <p>20 LBS</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="weight-capacity">
+                                                        <tr className="weight-capacity">
                                                             <th>Weight Capacity</th>
                                                             <td>
                                                                 <p>60 LBS</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="width">
+                                                        <tr className="width">
                                                             <th>Width</th>
                                                             <td>
                                                                 <p>24″</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="handle-height-ground-to-handle">
+                                                        <tr className="handle-height-ground-to-handle">
                                                             <th>Handle height (ground to handle)</th>
                                                             <td>
                                                                 <p>37-45″</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="wheels">
+                                                        <tr className="wheels">
                                                             <th>Wheels</th>
                                                             <td>
                                                                 <p>12″ air / wide track slick tread</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="seat-back-height">
+                                                        <tr className="seat-back-height">
                                                             <th>Seat back height</th>
                                                             <td>
                                                                 <p>21.5″</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="head-room-inside-canopy">
+                                                        <tr className="head-room-inside-canopy">
                                                             <th>Head room (inside canopy)</th>
                                                             <td>
                                                                 <p>25″</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="pa_color">
+                                                        <tr className="pa_color">
                                                             <th>Color</th>
                                                             <td>
                                                                 <p>Black, Blue, Red, White</p>
                                                             </td>
                                                         </tr>
-                                                        <tr ClassName="pa_size">
+                                                        <tr className="pa_size">
                                                             <th>Size</th>
                                                             <td>
                                                                 <p>M, S</p>
@@ -232,7 +232,7 @@ export default function Review() {
                                                 </table>
         </div>
         <div
-          ClassName="tab-pane fade"
+          className="tab-pane fade"
           id="nav-contact"
           role="tabpanel"
           aria-labelledby="nav-contact-tab"

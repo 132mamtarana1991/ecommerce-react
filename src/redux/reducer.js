@@ -6,7 +6,6 @@ const initialState = {
   loading: false,
   basket: [],
   error: null,
-  total: 0,
   count: 0,
   search: "",
   selectfood: "",
@@ -73,11 +72,6 @@ const basketReducer = (state = initialState, action) => {
       return {
         ...state,
         basket: updateBasket,
-      };
-    case types.TOTAL_PRICE:
-      return {
-        ...state,
-        total: action.payload,
       };
  
     case types.ADD_USER:

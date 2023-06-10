@@ -21776,8 +21776,18 @@ a.button.button-add-to-cart {
 ul.onhover-show-div li {
     color: #545454 !IMPORTANT;
 }
-button.text-body {
+.text-body {
     border: none;
     background: transparent;
     color: red;
+}
+
+.detail-extralink button {
+    background: #ffffff;
+    border: 1px solid #5a9d13;
+    width: 33px;
+}
+
+.detail-extralink span {
+    padding: 0px 11px;
 }

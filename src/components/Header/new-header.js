@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { searchFood, totalPrice, deleteUsers } from "../../redux/action";
+import { searchFood,  deleteUsers } from "../../redux/action";
 import {  Link } from "react-router-dom";
 export default function NewHeader() {
   let dispatch = useDispatch();
-  const { basket, total } = useSelector((state) => ({
+  const { basket } = useSelector((state) => ({
     basket: state.data.basket,
-    total: state.data.total,
   }));
-  console.log(basket,'basket')
   const removeProduct = (id) => {
     dispatch(deleteUsers(id))
   }

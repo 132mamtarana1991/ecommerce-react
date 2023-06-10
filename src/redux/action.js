@@ -56,11 +56,6 @@ export const addBasket = (item) => ({
   payload: item,
 });
 
-export const totalPrice = (total) => ({
-  type: types.TOTAL_PRICE,
-  payload: total,
-});
-
 export const searchFood = (item) => ({
   type: types.SEARCH,
   payload: item,

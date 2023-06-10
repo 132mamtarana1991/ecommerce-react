@@ -8,15 +8,16 @@ export default function HomeAdmin() {
   const { Column } = Table;
   let dispatch = useDispatch();
   const navigate = useNavigate();
+  
   const { users } = useSelector((state) => ({
     users: state.data.users,
   }));
+
   useEffect(() => {
     dispatch(loadUsers());
   }, []);
 
-  const HandleDelete = (id) => {
-    console.log(id,'idididid')
+  const handleDelete = (id) => {
     if (window.confirm("Please Confirm Delete Yes or No")) {
       dispatch(DeleteAdmin(id));
     }
@@ -56,7 +57,7 @@ export default function HomeAdmin() {
           title="Delete"
           dataIndex="id"
           render={text => (
-            <button onClick={() => HandleDelete(text)}>Delete</button>
+            <button onClick={() => handleDelete(text)}>Delete</button>
          )}
         />
         <Column
@@ -86,7 +87,7 @@ export default function HomeAdmin() {
                                     <td> {user.username}</td>
                                     <td>{user.email}</td>
                                     <td>{user.phone}</td>
-                                    <td className="Delete" onClick={() => HandleDelete(user.id)}>Delete</td>
+                                    <td className="Delete" onClick={() => handleDelete(user.id)}>Delete</td>
                                     <td className="Delete" onClick={() => navigate(`/editUser/${user.id}`)}>Edit</td>
                                 </tr>
                             ))}
