@@ -21,6 +21,29 @@ export const getSingleuser = (id) => async (dispatch) => {
   });
 };
 
+export const registerUser = (registerUser) => async (dispatch) => {
+  await axios.post("http://localhost:5000/register/", registerUser);
+  dispatch({
+    type: types.REGISTER_USER,
+    payload: registerUser,
+  });
+};
+
+export const loginUser = (loginUser) => async (dispatch) => {
+  let result = await axios.post("http://localhost:5000/login/", loginUser);
+  if (result?.data?.auth) {
+    localStorage.setItem("user", JSON.stringify(result?.data?.user));
+    localStorage.setItem("token", JSON.stringify(result?.data?.auth));
+  } else {
+    alert("no found user please add corrert user");
+  }
+  dispatch({
+    type: types.LOGIN_USER,
+    payload: loginUser,
+  });
+};
+
+
 export const deleteUsers = (id) => async (dispatch) => {
   dispatch({
     type: types.DELETE_USER,
@@ -37,17 +60,17 @@ export const totalPrice = (total) => ({
   type: types.TOTAL_PRICE,
   payload: total,
 });
-export const increaseCounter = () => {
+export const increaseCounter = (id) => {
   return {
     type: types.INCREASE_COUNTER,
-    payload: "increase",
+    payload: id,
   };
 };
 
-export const decreaseCounter = () => {
+export const decreaseCounter = (id) => {
   return {
     type: types.DECREASE_COUNTER,
-    payload: "decrease",
+    payload: id,
   };
 };
 export const searchFood = (item) => ({
@@ -59,6 +82,17 @@ export const selectFood = (item) => ({
   type: types.SELECT_FOOD,
   payload: item,
 });
+
+
+
+
+
+
+
+
+
+
+
 
 // Admin
 export const DeleteAdmin = (id) => async (dispatch) => {
@@ -96,24 +130,3 @@ export const updateSingleuser = (user, id) => async (dispatch) => {
   dispatch(loadUsers());
 };
 
-export const registerUser = (registerUser) => async (dispatch) => {
-  await axios.post("http://localhost:5000/register/", registerUser);
-  dispatch({
-    type: types.REGISTER_USER,
-    payload: registerUser,
-  });
-};
-
-export const loginUser = (loginUser) => async (dispatch) => {
-  let result = await axios.post("http://localhost:5000/login/", loginUser);
-  if (result?.data?.auth) {
-    localStorage.setItem("user", JSON.stringify(result?.data?.user));
-    localStorage.setItem("token", JSON.stringify(result?.data?.auth));
-  } else {
-    alert("no found user please add corrert user");
-  }
-  dispatch({
-    type: types.LOGIN_USER,
-    payload: loginUser,
-  });
-};

@@ -80,9 +80,12 @@ const basketReducer = (state = initialState, action) => {
         total: action.payload,
       };
     case types.INCREASE_COUNTER:
+      if (state.id !== action.id) {
+        return state;
+      }
       return {
         ...state,
-        count: state.count + 1,
+        count: state.count+1
       };
 
     case types.DECREASE_COUNTER:
