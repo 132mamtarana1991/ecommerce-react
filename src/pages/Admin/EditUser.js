@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import { useNavigate,useParams } from 'react-router-dom'
-import { updateSingleuser,getSingleuser } from '../../redux/action';
+import { updateSingleUser,getSingleProduct } from '../../redux/action';
 import { useDispatch,useSelector } from 'react-redux'
 
 const EditUser = () => {
@@ -21,7 +21,7 @@ const EditUser = () => {
      }, [userAdmin]);
  
      useEffect(() => {
-         dispatch(getSingleuser(id));
+         dispatch(getSingleProduct(id));
      }, []);
 
     const [users, setUser] = useState({
@@ -43,7 +43,7 @@ const EditUser = () => {
             setErrorName('Please Only Charchter')
         }
         else {
-            dispatch(updateSingleuser(users, id))
+            dispatch(updateSingleUser(users, id))
             navigate('/')
             setError('')
         }

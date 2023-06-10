@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadUsers, selectFood } from "../../redux/action";
+import { allProduct, selectFood } from "../../redux/action";
 import Product from "../../components/Product/Product";
 import Banner from "../../components/banner";
 import Category from "../../components/category";
@@ -21,7 +21,7 @@ export const Home = () => {
   }));
 
   useEffect(() => {
-    dispatch(loadUsers());
+    dispatch(allProduct());
   }, []);
 
   const result = [];

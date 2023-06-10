@@ -115,7 +115,7 @@ export const Checkout = () => {
                         </td>
                         <td className="" data-title="Price">
                           <h4 className="text-brand">
-                            $ {cartItem.price * cartItem.quantity}{" "}
+                            $ {(cartItem.price * cartItem.quantity).toFixed(2)}
                           </h4>
                         </td>
                         <td className="action text-center" data-title="Remove">
@@ -143,12 +143,12 @@ export const Checkout = () => {
                         <td className="cart_total_amount">
                           <h4 className="text-brand text-end">
                             ${" "}
-                           {totalPrice}
+                           {totalPrice.toFixed(2)}
                           </h4>
                         </td>
                       </tr>
                       <tr>
-                        <td colspan="2">
+                        <td colSpan="2">
                           <div className="divider-2 mt-10 mb-10"></div>
                         </td>
                       </tr>
@@ -171,7 +171,7 @@ export const Checkout = () => {
                         </td>
                       </tr>{" "}
                       <tr>
-                        <td scope="col" colspan="2">
+                        <td  colSpan="2">
                           <div className="divider-2 mt-10 mb-10"></div>
                         </td>
                       </tr>
@@ -182,7 +182,7 @@ export const Checkout = () => {
                         <td className="cart_total_amount">
                           <h4 className="text-brand text-end">
                             ${" "}
-                           {totalPrice}
+                           {totalPrice.toFixed(2)}
                           </h4>
                         </td>
                       </tr>

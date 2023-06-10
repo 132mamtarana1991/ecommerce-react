@@ -1,7 +1,7 @@
 import * as types from "./actionType";
 import axios from "axios";
 
-export const loadUsers = () => async (dispatch) => {
+export const allProduct = () => async (dispatch) => {
   const result = await axios.get("http://localhost:5000/products",{
     headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
   });
@@ -11,7 +11,7 @@ export const loadUsers = () => async (dispatch) => {
   });
 };
 
-export const getSingleuser = (id) => async (dispatch) => {
+export const getSingleProduct = (id) => async (dispatch) => {
   const result = await axios.get(`http://localhost:5000/product/${id}`,{
     headers: { authorization: 'bearer ' + JSON.parse(localStorage.getItem('token')) }
   });
@@ -56,7 +56,7 @@ export const addBasket = (item) => ({
   payload: item,
 });
 
-export const searchFood = (item) => ({
+export const searchAllData = (item) => ({
   type: types.SEARCH,
   payload: item,
 });
@@ -78,13 +78,13 @@ export const selectFood = (item) => ({
 
 
 // Admin
-export const DeleteAdmin = (id) => async (dispatch) => {
+export const deleteAdmin = (id) => async (dispatch) => {
   await axios.delete(`http://localhost:3000/posts/${id}`);
   dispatch({
     type: types.DELETE_ADMIN,
     payload: id,
   });
-  dispatch(loadUsers());
+  dispatch(allProduct());
 };
 
 export const addUsers = (user) => async (dispatch) => {
@@ -93,7 +93,7 @@ export const addUsers = (user) => async (dispatch) => {
     type: types.ADD_USER,
     payload: user,
   });
-  dispatch(loadUsers());
+  dispatch(allProduct());
 };
 
 export const getSingleAdmin = (id) => async (dispatch) => {
@@ -104,12 +104,12 @@ export const getSingleAdmin = (id) => async (dispatch) => {
   });
 };
 
-export const updateSingleuser = (user, id) => async (dispatch) => {
+export const updateSingleUser = (user, id) => async (dispatch) => {
   const result = await axios.put(`http://localhost:3000/users/${id}`, user);
   dispatch({
     type: types.GET_SINGLE_USER,
     payload: result.data,
   });
-  dispatch(loadUsers());
+  dispatch(allProduct());
 };
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addBasket, getSingleuser } from "../../redux/action";
+import { addBasket, getSingleProduct } from "../../redux/action";
 import SideBar from "../../components/SideBar";
 import {  Link } from "react-router-dom";
 import Review from "../../components/review";
@@ -16,7 +16,7 @@ export const SingleProduct = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    dispatch(getSingleuser(id));
+    dispatch(getSingleProduct(id));
   }, [id]);
 
   const addProduct = () => {

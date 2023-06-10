@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { searchFood,  deleteUsers } from "../../redux/action";
+import { searchAllData,  deleteUsers } from "../../redux/action";
 import {  Link } from "react-router-dom";
 export default function NewHeader() {
   let dispatch = useDispatch();
@@ -42,7 +42,7 @@ export default function NewHeader() {
                     placeholder="Search any Food..."
                     className="nav-search nav-search-field"
                     aria-expanded="true"
-                    onChange={(e) =>dispatch(searchFood(e.target.value))}
+                    onChange={(e) =>dispatch(searchAllData(e.target.value))}
                   />
                   <button
                     type="submit"

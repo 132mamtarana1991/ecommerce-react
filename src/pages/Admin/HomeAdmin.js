@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadUsers, DeleteAdmin } from "../../redux/action";
+import { allProduct, deleteAdmin } from "../../redux/action";
 import { Link } from "react-router-dom";
 import { Table } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -14,12 +14,12 @@ export default function HomeAdmin() {
   }));
 
   useEffect(() => {
-    dispatch(loadUsers());
+    dispatch(allProduct());
   }, []);
 
   const handleDelete = (id) => {
     if (window.confirm("Please Confirm Delete Yes or No")) {
-      dispatch(DeleteAdmin(id));
+      dispatch(deleteAdmin(id));
     }
   };
   const list = users && users.slice().reverse();
