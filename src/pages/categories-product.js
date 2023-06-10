@@ -12,7 +12,6 @@ export default function CategoriesProduct() {
   const categoriesProduct = users?.filter((item) =>
     item?.categories.toLowerCase().includes(location?.pathname?.split("/")[2])
   );
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -34,10 +33,10 @@ export default function CategoriesProduct() {
         </div>
       </div>
       <div className="row ProductsAll page-categories">
-        {categoriesProduct.map((item) => (
+        {categoriesProduct.map((item, index) => (
           <Product
-            key={item.id}
-            id={item.id}
+            key={index}
+            id={item._id}
             title={item.title}
             price={item.price}
             rating={item.rating}

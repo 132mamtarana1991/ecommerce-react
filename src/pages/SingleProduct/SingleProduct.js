@@ -28,7 +28,7 @@ export const SingleProduct = () => {
       rating: singleProductSelect.rating,
       title: singleProductSelect.title,
     };
-    dispatch(addBasket(item));
+    dispatch(addBasket({ ...item, quantity: 1 }));
   };
   return (
     <div className="singleProductpage">

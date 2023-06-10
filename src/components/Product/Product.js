@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addBasket } from "../../redux/action";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
   
 const Product = ({ id, title, price, rating, detail,  img }) => {
@@ -15,7 +15,6 @@ const Product = ({ id, title, price, rating, detail,  img }) => {
       detail,
       img,
     };
-    toast("Product Add");
     dispatch(addBasket({ ...item, quantity: 1 }));
   };
   return (
