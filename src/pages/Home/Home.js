@@ -24,6 +24,15 @@ export const Home = () => {
     dispatch(allProduct());
   }, []);
 
+
+  const checkUniqueCat = users.map((item)=> item.categories.toLowerCase())
+  const uniqueAges = [...new Set(checkUniqueCat)]
+  
+  const thirdArray = users.filter((elem) => { return uniqueAges.some((ele) => {
+    return ele === elem.categories});
+    });
+
+
   const result = [];
   const map = new Map();
   for (const item of users) {

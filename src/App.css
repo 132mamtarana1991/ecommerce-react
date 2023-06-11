@@ -6964,9 +6964,9 @@ header.header-style .onhover-dropdown:before {
     border-radius: 4px;
     line-height: 1;
     padding: 10px 20px;
-    background-color: #3BB77E;
+    background-color: #206664;
     font-family: "Quicksand", sans-serif;
-    border: 2px solid #3BB77E;
+    border: 2px solid #206664;
 }
 
 .buttons a {
@@ -21017,7 +21017,7 @@ ul.header-dropdown {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    background: #3BB77E;
+    background: #206664;
     color: #fff;
     display: inline-block;
     font-size: 12px;
@@ -21090,7 +21090,7 @@ ul.header-dropdown {
 .product-price {
     font-size: 18px;
     font-weight: bold;
-    color: #3BB77E;
+    color: #206664;
 }
 
 .product-price small {
@@ -21194,7 +21194,7 @@ ul.header-dropdown {
     font-weight: 900;
 }
 .text-brand {
-    color: #3BB77E !important;
+    color: #206664 !important;
 }
 .product-price .save-price {
     font-size: 12px;
@@ -21244,7 +21244,7 @@ button.button.button-add-to-cart {
     font-family: "Quicksand", sans-serif;
     color: #ffffff;
     border: none;
-    background-color: #3BB77E;
+    background-color: #206664;
     display: flex;
     align-items: center;
 }
@@ -21273,7 +21273,7 @@ button.button.button-add-to-cart  i.fa.fa-shopping-cart {
     border-radius: 0;
 }
 .breadcrumb a {
-    color: #3BB77E !important;
+    color: #206664 !important;
 }
 .breadcrumb span {
     position: relative;
@@ -21395,8 +21395,8 @@ h5.section-title.style-1.mb-30 {
 }
 .size-filter.list-filter li.active a {
     color: #fff;
-    background-color: #3BB77E;
-    border-color: #3BB77E;
+    background-color: #206664;
+    border-color: #206664;
 }
 .attr-size strong.mr-10 {
     font-size: 13px;
@@ -21561,7 +21561,7 @@ marquee.marquee {
     font-weight: 800;
 }
 .product-list-small .product-price {
-    color: #3BB77E;
+    color: #206664;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
@@ -21632,7 +21632,7 @@ marquee.marquee {
 }
 
 .nav-item.nav-link.active {
-    color: #3BB77E;
+    color: #206664;
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -21704,7 +21704,7 @@ a.btn.mb-20.w-100 {
     border-radius: 4px;
     color: #fff;
     border: 1px solid transparent;
-    background-color: #3BB77E;
+    background-color: #206664;
     cursor: pointer;
     -webkit-transition: all 300ms linear 0s;
     transition: all 300ms linear 0s;
@@ -21768,7 +21768,7 @@ a.button.button-add-to-cart {
     font-family: "Quicksand", sans-serif;
     color: #ffffff;
     border: none;
-    background-color: #3BB77E;
+    background-color: #206664;
     display: flex;
     align-items: center;
     text-align: center;
@@ -21791,3 +21791,22 @@ ul.onhover-show-div li {
 .detail-extralink span {
     padding: 0px 11px;
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.progress-container {
+  background-color: rgba(150, 150, 150, 0.6);
+  height: 8px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #206664;
+  height: 8px;
+  width: 0%;
+}
+
