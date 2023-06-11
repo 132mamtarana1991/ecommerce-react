@@ -33,7 +33,7 @@ h1 {
 h1 span {
     font-size: 107px;
     font-weight: 700;
-    color: #206664;
+    color: #3BB77E;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -160,7 +160,7 @@ h4 {
 }
 
 .top-panel-adv h4 span {
-    color: #206664;
+    color: #3BB77E;
     font-size: 18px;
     font-weight: 900
 }
@@ -175,7 +175,7 @@ h4 {
     background-color: #2066641f;
     margin-left: 20px;
     padding: 5px 15px 8px;
-    border: 1px dashed #206664;
+    border: 1px dashed #3BB77E;
     border-radius: 5px
 }
 
@@ -188,7 +188,7 @@ h4 {
     font-size: 14px;
     margin-bottom: 0;
     font-weight: 700;
-    color: #206664
+    color: #3BB77E
 }
 
 .top-panel-adv .close-btn {
@@ -211,7 +211,7 @@ h4 {
     padding: 6px;
     width: 30px;
     height: 30px;
-    color: #206664;
+    color: #3BB77E;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 4px #ddd;
     box-shadow: 0 0 4px #ddd
@@ -604,7 +604,7 @@ button {
 }
 
 .full-banner.banner-layout-3 .banner-contain .color {
-    color: #206664;
+    color: #3BB77E;
     line-height: 1
 }
 
@@ -797,7 +797,7 @@ button {
 .full-banner .banner-contain h2 {
     font-size: 100px;
     font-weight: 700;
-    color: #206664;
+    color: #3BB77E;
     text-transform: uppercase;
     margin-top: -15px
 }
@@ -854,7 +854,7 @@ button {
 }
 
 .full-banner .banner-contain.christmas-contain h4 span {
-    color: #206664
+    color: #3BB77E
 }
 
 .full-banner .santa-img {
@@ -1010,7 +1010,7 @@ button {
     background-color: rgba(255,255,255,0.9);
     padding: 40px 0;
     width: 90%;
-    border: 3px solid #206664
+    border: 3px solid #3BB77E
 }
 
 .advertise-section .full-banner .banner-contain h2 {
@@ -1120,7 +1120,7 @@ button {
 }
 
 .collection-banner .contain-banner h4 {
-    color: #206664;
+    color: #3BB77E;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1228,7 +1228,7 @@ button {
 }
 
 .banner-furniture .collection-banner .contain-banner.banner-3 h4 {
-    color: #206664
+    color: #3BB77E
 }
 
 .banner-goggles .collection-banner .contain-banner.banner-3 h2 {
@@ -1236,7 +1236,7 @@ button {
 }
 
 .banner-goggles .collection-banner .contain-banner.banner-3 h4 {
-    color: #206664
+    color: #3BB77E
 }
 
 .banner-top-cls {
@@ -1272,7 +1272,7 @@ button {
 }
 
 .absolute_banner .collection-banner .absolute-contain h3 {
-    color: #206664;
+    color: #3BB77E;
     text-transform: capitalize;
     margin-top: -5px;
     font-weight: 700
@@ -1427,7 +1427,7 @@ button {
 }
 
 .gift-card-section .container .card-box {
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: calc(15px + (35 - 15) * ((100vw - 320px) / (1920 - 320)));
     border-radius: 10px
 }
@@ -1467,7 +1467,7 @@ button {
 }
 
 .classic-effect:before,.classic-effect:after {
-    background: #206664;
+    background: #3BB77E;
     width: 25%;
     position: absolute;
     content: "";
@@ -1492,7 +1492,7 @@ button {
 }
 
 .classic-effect span:before,.classic-effect span:after {
-    background: #206664;
+    background: #3BB77E;
     width: 25%;
     position: absolute;
     content: "";
@@ -1539,8 +1539,8 @@ button {
 .basic-effect:after {
     position: absolute;
     content: "";
-    background: -webkit-gradient(linear, left top, left bottom, from(#206664), color-stop(99%, var(--theme-color2)));
-    background: linear-gradient(-180deg, #206664 0%, var(--theme-color2) 99%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BB77E), color-stop(99%, var(--theme-color2)));
+    background: linear-gradient(-180deg, #3BB77E 0%, var(--theme-color2) 99%);
     width: 100%;
     height: 100%;
     top: 0;
@@ -1570,7 +1570,7 @@ button {
 }
 
 .blog-details h4 {
-    color: #206664;
+    color: #3BB77E;
     margin-top: 25px;
     line-height: 1;
     margin-bottom: 0
@@ -1590,7 +1590,7 @@ button {
 }
 
 .blog-details p:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -1726,7 +1726,7 @@ button {
 }
 
 .add_to_cart .cart-inner .cart_media li .buttons a:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -1909,7 +1909,7 @@ button {
 
 .cart_qty_cls {
     position: absolute;
-    background: #206664;
+    background: #3BB77E;
     width: 20px;
     height: 20px;
     color: #fff;
@@ -1996,7 +1996,7 @@ button {
 
 .category-block .category-image.svg-image svg {
     width: 50px;
-    fill: #206664
+    fill: #3BB77E
 }
 
 .category-block .category-details {
@@ -2018,7 +2018,7 @@ button {
 }
 
 .category-block:hover .category-image {
-    background-color: #206664;
+    background-color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2037,7 +2037,7 @@ button {
 }
 
 .category-block:hover .category-details h5 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2108,7 +2108,7 @@ button {
 }
 
 .category-nft:hover .category-details h5 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2143,7 +2143,7 @@ button {
 }
 
 .category-border div .category-banner:hover h2 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease
 }
@@ -2202,7 +2202,7 @@ button {
 .category-bg .image-block:after {
     content: "";
     position: absolute;
-    background-color: #206664;
+    background-color: #3BB77E;
     height: 0;
     width: 40px;
     z-index: 1;
@@ -2244,7 +2244,7 @@ button {
 .category-bg .contain-block:after {
     content: "";
     position: absolute;
-    background-color: #206664;
+    background-color: #3BB77E;
     height: 0;
     width: 40px;
     z-index: 1;
@@ -2258,13 +2258,13 @@ button {
 }
 
 .category-bg .contain-block:hover h2 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
 
 .category-bg .contain-block:hover h6 span {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2292,7 +2292,7 @@ button {
 }
 
 .category-bg .contain-block h6 {
-    color: #206664;
+    color: #3BB77E;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     line-height: 1;
@@ -2320,7 +2320,7 @@ button {
     content: "";
     left: 0;
     top: 0;
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 0.3;
     width: 100%;
     height: 100%;
@@ -2354,7 +2354,7 @@ button {
     position: absolute;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    background: #206664;
+    background: #3BB77E;
     -webkit-transition-delay: 0s;
     transition-delay: 0s
 }
@@ -2381,7 +2381,7 @@ button {
     position: absolute;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    background: #206664
+    background: #3BB77E
 }
 
 .category-m .category-wrapper:before {
@@ -2443,7 +2443,7 @@ button {
 }
 
 .category-m .category-wrapper .category-link li a:hover {
-    color: #206664
+    color: #3BB77E
 }
 
 .category-m.w-bg .category-wrapper {
@@ -2490,7 +2490,7 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
@@ -2512,7 +2512,7 @@ button {
 }
 
 .background .contain-bg:hover h4 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2582,7 +2582,7 @@ button {
 
 
 .img-category:hover .img-sec,.img-category.hover-effect .img-sec {
-    border: 3px solid #206664;
+    border: 3px solid #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -2630,8 +2630,8 @@ button {
 
 .gradient-category .gradient-border {
     background: #654ea3;
-    background: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background: linear-gradient(to right, #206664, var(--theme-color2));
+    background: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background: linear-gradient(to right, #3BB77E, var(--theme-color2));
     padding: 3px;
     width: 100%;
     height: 220px;
@@ -2883,7 +2883,7 @@ button {
     bottom: 0;
     width: 100%;
     height: 38px;
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 0.2;
     z-index: -1
 }
@@ -2932,7 +2932,7 @@ button {
 .category-rounded .category-block .category-details h5 {
     padding: 2px 14px;
     display: inline-block;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 15px;
     color: #fff
 }
@@ -3275,7 +3275,7 @@ button {
     height: 95%;
     left: -10px;
     top: -20px;
-    border: 10px solid #206664;
+    border: 10px solid #3BB77E;
     z-index: -1
 }
 
@@ -3290,7 +3290,7 @@ button {
     height: 40px;
     right: 30%;
     top: 0;
-    background-color: #206664;
+    background-color: #3BB77E;
     z-index: -1;
     opacity: 0.18
 }
@@ -3370,7 +3370,7 @@ button {
     height: 60px;
     width: 60px;
     border-radius: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -3527,8 +3527,8 @@ button {
 }
 
 .gym-parallax .instagram-box .overlay {
-    background: -webkit-gradient(linear, left top, left bottom, from(#206664), color-stop(99%, var(--theme-color2)));
-    background: linear-gradient(-180deg, #206664 0%, var(--theme-color2) 99%)
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BB77E), color-stop(99%, var(--theme-color2)));
+    background: linear-gradient(-180deg, #3BB77E 0%, var(--theme-color2) 99%)
 }
 
 .gym-product {
@@ -3564,8 +3564,8 @@ button {
 }
 
 .gym-product .product-box .img-wrapper .cart-info i {
-    background: -webkit-gradient(linear, left top, left bottom, from(#206664), color-stop(99%, var(--theme-color2)));
-    background: linear-gradient(180deg, #206664 0%, var(--theme-color2) 99%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BB77E), color-stop(99%, var(--theme-color2)));
+    background: linear-gradient(180deg, #3BB77E 0%, var(--theme-color2) 99%);
     color: rgba(255,255,255,0.6);
     border-radius: 100%;
     margin: 0 5px;
@@ -3693,7 +3693,7 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 0.3;
     z-index: -1
 }
@@ -3737,7 +3737,7 @@ footer.pet-layout-footer .footer-brand-logo {
 }
 
 footer.pet-layout-footer .sub-footer.black-subfooter {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 footer.pet-layout-footer .sub-footer p {
@@ -3798,7 +3798,7 @@ footer.pet-layout-footer .social-white {
 
 .form_search button i {
     font-size: 18px;
-    color: #206664
+    color: #3BB77E
 }
 
 .blog.blog_box .blog-details {
@@ -3975,8 +3975,8 @@ footer.pet-layout-footer .social-white {
 
 
 .border-box.tools-grey .ribbon span {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 .border-box.tools-grey .product-box {
@@ -3987,18 +3987,18 @@ footer.pet-layout-footer .social-white {
 }
 
 .border-box.tools-grey .product-box .cart-info a:hover {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 .border-box.tools-grey .product-box .cart-info button:hover {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 .border-box.tools-grey .product-box .quick-view-part {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 .detail-cannabis .detail_section {
@@ -4025,7 +4025,7 @@ footer.pet-layout-footer .social-white {
 .detail-cannabis .detail_section svg {
     width: 50px;
     margin-bottom: 15px;
-    fill: #206664
+    fill: #3BB77E
 }
 
 .overflow-cls {
@@ -4041,7 +4041,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .blog-section .blog-details h4 {
-    color: #206664;
+    color: #3BB77E;
     margin-top: 15px;
     line-height: 1;
     margin-bottom: 0
@@ -4076,7 +4076,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .blog-section .blog-wrap:hover .blog-details p {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -4112,7 +4112,7 @@ footer.pet-layout-footer .social-white {
     top: 0;
     width: 100%;
     height: 100%;
-    border: 3px solid #206664;
+    border: 3px solid #3BB77E;
     opacity: 0.5;
     z-index: -1
 }
@@ -4187,7 +4187,7 @@ footer.pet-layout-footer .social-white {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
-    color: #206664;
+    color: #3BB77E;
     margin-top: 15px
 }
 
@@ -4252,7 +4252,7 @@ footer.pet-layout-footer .social-white {
     height: calc(100% + 40px);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 4px solid #206664;
+    border: 4px solid #3BB77E;
     opacity: 0.66;
     z-index: -1
 }
@@ -4352,7 +4352,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .bakery-card .offer-slider .media .lable {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     padding: 8px 6px;
     border-radius: 100%;
@@ -4392,7 +4392,7 @@ footer.pet-layout-footer .social-white {
 
 .chef-section .chef-box .chef-detail h3 {
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 4px;
     font-weight: 600;
     font-size: 22px
@@ -4411,7 +4411,7 @@ footer.pet-layout-footer .social-white {
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, #206664), color-stop(0.98, white));
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, #3BB77E), color-stop(0.98, white));
     left: 0;
     top: 0
 }
@@ -4462,7 +4462,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .chef-section .chef-box .chef-detail .social-icon ul li:hover i {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -4511,7 +4511,7 @@ footer.pet-layout-footer .social-white {
 
 .center-slider-bicycle .slick-prev:before {
     font-size: 30px;
-    color: #206664
+    color: #3BB77E
 }
 
 .center-slider-bicycle .slick-next {
@@ -4522,7 +4522,7 @@ footer.pet-layout-footer .social-white {
 
 .center-slider-bicycle .slick-next:before {
     font-size: 30px;
-    color: #206664
+    color: #3BB77E
 }
 
 .center-slider-bicycle .slick-slide {
@@ -4690,7 +4690,7 @@ footer.pet-layout-footer .social-white {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 100%;
     width: 28px;
     height: 28px;
@@ -4812,7 +4812,7 @@ footer.pet-layout-footer .social-white {
 
 .wine-process-sec .process-section .process-content h3 {
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     font-weight: 600
 }
 
@@ -4900,7 +4900,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .main-feature .key-feature .theme-collection:hover h5 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease
 }
@@ -5014,7 +5014,7 @@ footer.pet-layout-footer .social-white {
     -webkit-transform: translate(50%, -50%) rotate(-90deg);
     transform: translate(50%, -50%) rotate(-90deg);
     text-align: center;
-    background-color: #206664;
+    background-color: #3BB77E;
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5064,7 +5064,7 @@ footer.pet-layout-footer .social-white {
     -webkit-transform: translate(50%, -50%) rotate(-90deg);
     transform: translate(50%, -50%) rotate(-90deg);
     text-align: center;
-    background-color: #206664;
+    background-color: #3BB77E;
     margin-bottom: 0;
     cursor: pointer
 }
@@ -5124,7 +5124,7 @@ footer.pet-layout-footer .social-white {
 }
 
 .top-panel-adv h4 span {
-    color: #206664;
+    color: #3BB77E;
     font-size: 18px;
     font-weight: 900
 }
@@ -5139,7 +5139,7 @@ footer.pet-layout-footer .social-white {
     background-color: #2066641f;
     margin-left: 20px;
     padding: 5px 15px 8px;
-    border: 1px dashed #206664;
+    border: 1px dashed #3BB77E;
     border-radius: 5px
 }
 
@@ -5152,7 +5152,7 @@ footer.pet-layout-footer .social-white {
     font-size: 14px;
     margin-bottom: 0;
     font-weight: 700;
-    color: #206664
+    color: #3BB77E
 }
 
 .top-panel-adv .close-btn {
@@ -5175,7 +5175,7 @@ footer.pet-layout-footer .social-white {
     padding: 6px;
     width: 30px;
     height: 30px;
-    color: #206664;
+    color: #3BB77E;
     border-radius: 4px;
     -webkit-box-shadow: 0 0 4px #ddd;
     box-shadow: 0 0 4px #ddd
@@ -5633,7 +5633,7 @@ header.header-5.overlay-style .pixelstrap>li>a:hover,header.header-5.overlay-sty
 }
 
 header.header-6 .top-header {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 header.header-6 .top-header .header-contact li {
@@ -5759,7 +5759,7 @@ header.header-tools .top-header {
 }
 
 header.header-tools .top-header .container {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 header.header-tools .top-header .header-contact {
@@ -5781,7 +5781,7 @@ header.header-tools .top-header .header-dropdown li a i {
 
 header.header-tools .logo-menu-part>.container {
     background-color: #fff;
-    border-bottom: 2px solid #206664
+    border-bottom: 2px solid #3BB77E
 }
 
 header.header-tools .main-menu .menu-left .navbar {
@@ -5837,9 +5837,9 @@ header.header-tools.header-style.top-relative .container {
 }
 
 header.green-gradient .top-header {
-    background: #206664;
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background: #3BB77E;
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 header.green-gradient .top-header .header-contact {
@@ -5868,9 +5868,9 @@ header.green-gradient .top-header .header-dropdown li a i {
 }
 
 header.green-gradient .pixelstrap li .lable-nav {
-    background: #206664;
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2))
+    background: #3BB77E;
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2))
 }
 
 header.header-metro {
@@ -6232,7 +6232,7 @@ header.left-header.left-header-sm .sidenav .left-sidebar_center .pixelstrap>li>a
 }
 
 header.video-header .top-header {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 header.video-header .top-header .header-contact {
@@ -6363,7 +6363,7 @@ header.marketplace.header-tools.sticky {
 }
 
 header.marketplace .top-header {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 header.marketplace .top-header .header-contact li {
@@ -6593,7 +6593,7 @@ header.header-style .onhover-dropdown:before {
 }
 
 .top-header .header-contact li i {
-    color: #206664;
+    color: #3BB77E;
     padding-left: 10px;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg)
@@ -6633,13 +6633,13 @@ header.header-style .onhover-dropdown:before {
 }
 
 .top-header .header-dropdown li a:hover i {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
 
 .top-header .header-dropdown li:hover i {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -6686,7 +6686,7 @@ header.header-style .onhover-dropdown:before {
 }
 
 .top-header.top-header-dark .header-dropdown li a:hover i {
-    color: #206664
+    color: #3BB77E
 }
 
 .top-header.top-header-dark2 {
@@ -6714,7 +6714,7 @@ header.header-style .onhover-dropdown:before {
 }
 
 .top-header.top-header-dark2 .header-dropdown li a:hover i {
-    color: #206664
+    color: #3BB77E
 }
 
 .top-header.top-header-dark3 {
@@ -6742,7 +6742,7 @@ header.header-style .onhover-dropdown:before {
 }
 
 .top-header.top-header-dark3 .header-dropdown li a:hover i {
-    color: #206664
+    color: #3BB77E
 }
 
 .top-header.top-header-sm .header-contact {
@@ -6862,7 +6862,7 @@ header.header-style .onhover-dropdown:before {
     -ms-flex-align: center;
     align-items: center;
     padding: 12px;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     border-radius: 5px
 }
@@ -6964,9 +6964,9 @@ header.header-style .onhover-dropdown:before {
     border-radius: 4px;
     line-height: 1;
     padding: 10px 20px;
-    background-color: #206664;
+    background-color: #3BB77E;
     font-family: "Quicksand", sans-serif;
-    border: 2px solid #206664;
+    border: 2px solid #3BB77E;
 }
 
 .buttons a {
@@ -7033,7 +7033,7 @@ header.header-style .onhover-dropdown:before {
 
 .main-menu .menu-right .icon-nav .onhover-div .show-div li .search-btn {
     padding: 8px 12px;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff
 }
 
@@ -7075,9 +7075,7 @@ header.header-style .onhover-dropdown:before {
     overflow-y: unset !important
 }
 
-.top-header.top-header-theme {
-    background-color: #206664
-}
+
 
 .top-header.top-header-theme .header-dropdown li {
     color: #fff
@@ -7316,7 +7314,7 @@ header.stickycls {
     background-color: rgba(32,102,100,0.12);
     padding: 6px 17px;
     border-radius: 8px;
-    border: 1px dashed #206664
+    border: 1px dashed #3BB77E
 }
 
 .header-compact .delivery-area svg {
@@ -8035,12 +8033,12 @@ header.stickycls {
 }
 
 .insta-title h4 span {
-    color: #206664
+    color: #3BB77E
 }
 
 .instagram-box {
     position: relative;
-    background-color: #206664;
+    background-color: #3BB77E;
     overflow: hidden
 }
 
@@ -8055,7 +8053,7 @@ header.stickycls {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     top: 0;
     text-align: center;
     display: -webkit-box;
@@ -8114,7 +8112,7 @@ header.stickycls {
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 50%
 }
 
@@ -8134,15 +8132,15 @@ header.stickycls {
 }
 
 .loader-wrapper.gradient-loader .loader {
-    background: -webkit-gradient(linear, left top, left bottom, from(#206664), color-stop(99%, var(--theme-color2)));
-    background: linear-gradient(180deg, #206664 0%, var(--theme-color2) 99%);
-    background-color: #206664
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BB77E), color-stop(99%, var(--theme-color2)));
+    background: linear-gradient(180deg, #3BB77E 0%, var(--theme-color2) 99%);
+    background-color: #3BB77E
 }
 
 .loader-wrapper.green-loader .loader {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2));
-    background-color: #206664
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2));
+    background-color: #3BB77E
 }
 
 .loader_skeleton .marketplace-sidebar.sidenav .pixelstrap>li>a .ldr-text,.loader_skeleton .home-slider .home .slider-contain h2,.loader_skeleton .home-slider .home .slider-contain h1,.loader_skeleton .home-slider .home .slider-contain h6,.loader_skeleton .collection-banner .ldr-bg .contain-banner h4,.loader_skeleton .collection-banner .ldr-bg .contain-banner h2,.loader_skeleton .collection-banner .ldr-bg .contain-banner h6,.loader_skeleton .title1 h4,.loader_skeleton .title1 h2,.loader_skeleton .title8 h2,.loader_skeleton .title8 p,.loader_skeleton .product-para .first,.loader_skeleton .product-para .second,.loader_skeleton .top-banner-wrapper .top-banner-content h4,.loader_skeleton .top-banner-wrapper .top-banner-content h5,.loader_skeleton .top-banner-wrapper .top-banner-content p,.loader_skeleton .product-top-filter .ldr-text,.loader_skeleton .product-box .product-detail h4,.loader_skeleton .product-box .product-detail h5,.loader_skeleton .product-box .product-detail h6,.loader_skeleton .product-box.product-style-5.product-box h6,.loader_skeleton .product-box.product-style-5.product-box h5,.loader_skeleton .product-box.product-style-5.product-box h4,.loader_skeleton .category-button .btn-outline,.loader_skeleton .category-block .category-details h5,.loader_skeleton .category-block .category-details h6,.loader_skeleton .service-home .service-block1 h4,.loader_skeleton .service-home .service-block1 p,.loader_skeleton .service-block1 h5,.loader_skeleton .service-block h4,.loader_skeleton .service-block p,.loader_skeleton .category-tools .category-m .category-wrapper h4,.loader_skeleton .category-tools .category-m .category-wrapper .category-link li,.loader_skeleton .category-tools .category-m .category-wrapper .ldr-btn,.loader_skeleton .collection-filter-block .filter-block h4,.loader_skeleton .collection-filter-block .filter-block ul li,.loader_skeleton .theme-card .title-border,.loader_skeleton .product-page .product-right h2,.loader_skeleton .product-page .product-right h4,.loader_skeleton .product-page .product-right h3,.loader_skeleton .product-page .product-right ul li,.loader_skeleton .product-page .product-right .btn-group .btn-ldr,.loader_skeleton .tab-product ul li,.loader_skeleton .gradient-category h4,.loader_skeleton .img-category h4,.loader_skeleton .title-basic .title,.loader_skeleton .vertical-banner .vertical-content h2,.loader_skeleton .vertical-banner .vertical-content a {
@@ -9028,7 +9026,7 @@ header.stickycls {
 
 .toggle-nav i {
     font-size: 24px;
-    color: #206664;
+    color: #3BB77E;
     opacity: 0.6
 }
 
@@ -9038,7 +9036,7 @@ header.stickycls {
 
 .new-tag {
     padding-left: 3px;
-    color: #206664;
+    color: #3BB77E;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700
@@ -9052,7 +9050,7 @@ header.stickycls {
     position: absolute;
     top: -5px;
     right: -10px;
-    color: #206664;
+    color: #3BB77E;
     font-size: 12px;
     font-weight: 700
 }
@@ -9084,7 +9082,7 @@ header.stickycls {
 }
 
 .pixelstrap a:hover {
-    color: #206664
+    color: #3BB77E
 }
 
 .pixelstrap a.disabled {
@@ -9178,7 +9176,7 @@ header.stickycls {
 }
 
 .pixelstrap .icon-trend {
-    color: #206664
+    color: #3BB77E
 }
 
 .pixelstrap .full-mega-menu,.pixelstrap .clothing-menu {
@@ -9292,7 +9290,7 @@ header.stickycls {
 
 .pixelstrap li .lable-nav {
     position: absolute;
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: 2px 7px;
     color: #fff;
     top: 20px;
@@ -9309,7 +9307,7 @@ header.stickycls {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #206664;
+    border-top: 5px solid #3BB77E;
     top: 15px;
     left: 22px
 }
@@ -9435,7 +9433,7 @@ header.stickycls {
     top: -8px;
     right: 0px;
     color: white;
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: 2px 7px;
     text-transform: uppercase;
     font-size: 9px;
@@ -9588,7 +9586,7 @@ header.stickycls {
         content: "";
         height: 2px;
         width: 0;
-        background-color: #206664;
+        background-color: #3BB77E;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease
     }
@@ -9909,7 +9907,7 @@ header.stickycls {
     }
 
     .pixelstrap li ul li a:hover {
-        color: #206664;
+        color: #3BB77E;
         font-size: 14px;
         padding: 5px 35px
     }
@@ -10196,7 +10194,7 @@ header.stickycls {
 .ribbon-1 {
     width: 24px;
     height: 45px;
-    background: #206664;
+    background: #3BB77E;
     top: -6px;
     left: 25px;
     position: absolute;
@@ -10207,7 +10205,7 @@ header.stickycls {
 .ribbon-1:before {
     height: 0;
     width: 0;
-    border-bottom: 6px solid #206664;
+    border-bottom: 6px solid #3BB77E;
     border-right: 6px solid transparent;
     right: -6px;
     content: "";
@@ -10217,8 +10215,8 @@ header.stickycls {
 .ribbon-1:after {
     height: 0;
     width: 0;
-    border-left: 12px solid #206664;
-    border-right: 12px solid #206664;
+    border-left: 12px solid #3BB77E;
+    border-right: 12px solid #3BB77E;
     border-bottom: 12px solid transparent;
     bottom: -11px;
     left: 0;
@@ -10234,7 +10232,7 @@ header.stickycls {
 }
 
 .theme-modal .modal-dialog .modal-content .modal-body {
-    background-image: linear-gradient(135deg, #206664 5.77%, #fff 5.77%, #fff 25%, #111 25%, #111 30.77%, #fff 30.77%, #fff 50%, #206664 50%, #206664 55.77%, #fff 55.77%, #fff 75%, #111 75%, #111 80.77%, #fff 80.77%, #fff 100%);
+    background-image: linear-gradient(135deg, #3BB77E 5.77%, #fff 5.77%, #fff 25%, #111 25%, #111 30.77%, #fff 30.77%, #fff 50%, #3BB77E 50%, #3BB77E 55.77%, #fff 55.77%, #fff 75%, #111 75%, #111 80.77%, #fff 80.77%, #fff 100%);
     background-size: 36.77px 36.77px;
     background-color: white
 }
@@ -10362,7 +10360,7 @@ header.stickycls {
 }
 
 .theme-modal.demo-modal .modal-dialog .modal-content .modal-body::-webkit-scrollbar-thumb {
-    background: #206664
+    background: #3BB77E
 }
 
 .theme-modal.demo-modal .modal-dialog .modal-content .modal-body::-webkit-scrollbar-thumb:hover {
@@ -10418,7 +10416,7 @@ header.stickycls {
 }
 
 .theme-modal.cart-modal .modal-dialog .modal-content .modal-body .modal-bg.addtocart #upsell_product .product-box .product-detail h6 a {
-    color: #206664
+    color: #3BB77E
 }
 
 .theme-modal.cart-modal .modal-dialog .modal-content .modal-body .upsell_payment {
@@ -10436,7 +10434,7 @@ header.stickycls {
 .theme-modal.exit-modal .media .media-body h4 {
     font-size: 20px;
     line-height: 1.2;
-    color: #206664;
+    color: #3BB77E;
     font-weight: 500
 }
 
@@ -10506,7 +10504,7 @@ header.stickycls {
 }
 
 .recently-purchase .media-body .product-name {
-    color: #206664
+    color: #3BB77E
 }
 
 .recently-purchase .media-body .timeAgo {
@@ -11134,7 +11132,7 @@ header.stickycls {
 
 .lookbook .lookbook-block .lookbook-dot .dot-showbox .dot-info h6 {
     text-transform: uppercase;
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 0
 }
 
@@ -11151,7 +11149,7 @@ header.stickycls {
 }
 
 .lookbook .lookbook-block .lookbook-dot:hover {
-    background-color: #206664;
+    background-color: #3BB77E;
     -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
     box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
     z-index: 10
@@ -11294,7 +11292,7 @@ header.stickycls {
 }
 
 .progress-section .progress .progress-bar {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .product-box .progress-section {
@@ -11371,7 +11369,7 @@ header.stickycls {
     width: 100%;
     height: 100%;
     content: "";
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 0
 }
 
@@ -11384,7 +11382,7 @@ header.stickycls {
     border-radius: 100%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #206664;
+    color: #3BB77E;
     font-size: 22px;
     display: none;
     -webkit-transition: all 0.4s ease;
@@ -11450,7 +11448,7 @@ header.stickycls {
 }
 
 .portfolio-section .filter-button.active {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff
 }
 
@@ -11569,19 +11567,19 @@ header.stickycls {
 }
 
 .filter-section .filter-container ul.filter>li>a {
-    color: #206664;
+    color: #3BB77E;
     font-size: 20px;
     line-height: 40px
 }
 
 .filter-section .filter-container ul.filter>li>a:hover,.filter-section .filter-container ul.filter>li>a:focus {
     text-decoration: none;
-    color: #206664;
+    color: #3BB77E;
     outline: none
 }
 
 .filter-section .filter-container ul.filter>li.active {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .filter-section .filter-container ul.filter>li.active a {
@@ -11690,7 +11688,7 @@ header.stickycls {
 }
 
 .absolute-product .product-box .product-detail .cart-bottom i:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -11763,11 +11761,11 @@ header.stickycls {
 }
 
 .image-swatch li.active img {
-    border: 1px solid #206664
+    border: 1px solid #3BB77E
 }
 
 .image-swatch li:hover img {
-    border: 1px solid #206664;
+    border: 1px solid #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -11898,7 +11896,7 @@ header.stickycls {
 }
 
 .product-box .img-block .lable-wrapper .lable1,.product-wrap .img-block .lable-wrapper .lable1 {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px
@@ -11978,7 +11976,7 @@ header.stickycls {
 }
 
 .product-box .img-wrapper .cart-box i:hover,.product-wrap .img-wrapper .cart-box i:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease
 }
@@ -11994,7 +11992,7 @@ header.stickycls {
 
 .product-box .img-wrapper .lable-block .lable3,.product-wrap .img-wrapper .lable-block .lable3 {
     border-radius: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -12077,7 +12075,7 @@ header.stickycls {
 }
 
 .product-box .cart-info i:hover,.product-box .cart-wrap i:hover,.product-wrap .cart-info i:hover,.product-wrap .cart-wrap i:hover {
-    color: #206664
+    color: #3BB77E
 }
 
 .product-box .cart-detail,.product-wrap .cart-detail {
@@ -12179,13 +12177,13 @@ header.stickycls {
 }
 
 .product-box .product-info .add-btn i,.product-wrap .product-info .add-btn i {
-    color: #206664
+    color: #3BB77E
 }
 
 .product-box .product-info .add-btn .btn-outline,.product-wrap .product-info .add-btn .btn-outline {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    color: #206664
+    color: #3BB77E
 }
 
 .product-box .product-info .add-btn .btn-outline:hover,.product-wrap .product-info .add-btn .btn-outline:hover {
@@ -12343,7 +12341,7 @@ header.stickycls {
 
 .lable-gradient {
     border-radius: 0;
-    background-color: #206664;
+    background-color: #3BB77E;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -12353,8 +12351,8 @@ header.stickycls {
     color: #fff;
     top: 7px;
     left: 7px;
-    background: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background: linear-gradient(to right, #206664, var(--theme-color2));
+    background: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background: linear-gradient(to right, #3BB77E, var(--theme-color2));
     z-index: 1
 }
 
@@ -12498,7 +12496,7 @@ header.stickycls {
 .bg-title .theme-card h5.title-border {
     padding: 10px;
     color: white;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 5px
 }
 
@@ -12531,7 +12529,7 @@ header.stickycls {
     align-items: center;
     margin-bottom: 30px;
     margin-top: -6px;
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: 10px;
     border-radius: 5px
 }
@@ -12571,7 +12569,7 @@ header.stickycls {
 }
 
 .bg-title .theme-tab .bg-title-part .tab-title.w-bg li.current {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .bg-title .theme-tab .bg-title-part .tab-title.w-bg li.current a {
@@ -12587,7 +12585,7 @@ header.stickycls {
 }
 
 .bg-title .theme-tab .bg-title-part.wo-bg .tab-title .current a {
-    color: #206664
+    color: #3BB77E
 }
 
 .bg-title .theme-tab .bg-title-part.wo-bg .title-border {
@@ -12619,7 +12617,7 @@ header.stickycls {
 }
 
 .bg-title.wo-bg .theme-tab .tab-title .current a {
-    color: #206664
+    color: #3BB77E
 }
 
 .product-christmas .product-box {
@@ -12689,7 +12687,7 @@ header.stickycls {
 }
 
 .product-christmas .product-box .product-detail .rating i:nth-child(-n+4),.product-christmas .product-box .product-info .rating i:nth-child(-n+4) {
-    color: #206664
+    color: #3BB77E
 }
 
 .product-christmas .product-box .product-detail .rating i:last-child,.product-christmas .product-box .product-info .rating i:last-child {
@@ -12710,7 +12708,7 @@ header.stickycls {
 
 .product-christmas .product-box .product-detail h4,.product-christmas .product-box .product-info h4 {
     font-size: 18px;
-    color: #206664;
+    color: #3BB77E;
     font-weight: 700;
     margin-bottom: 0;
     -webkit-transition: all 0.5s ease;
@@ -12719,7 +12717,7 @@ header.stickycls {
 
 .product-christmas .product-box:hover .cart-info {
     bottom: 0;
-    background-color: #206664;
+    background-color: #3BB77E;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
@@ -12752,7 +12750,7 @@ header.stickycls {
 }
 
 .game-product .theme-tab .tab-title .current a,.game-product .theme-tab .tab-title2 .current a {
-    border-bottom: 2px solid #206664;
+    border-bottom: 2px solid #3BB77E;
     padding-bottom: 5px
 }
 
@@ -12774,7 +12772,7 @@ header.stickycls {
 }
 
 .game-product .product-box .add-button {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     text-align: center;
     font-size: 18px;
@@ -12841,7 +12839,7 @@ header.stickycls {
 }
 
 .tools-grey .product-box .cart-info a:hover {
-    background-color: #206664;
+    background-color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -12867,7 +12865,7 @@ header.stickycls {
 }
 
 .tools-grey .product-box .cart-info button:hover {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
@@ -12878,7 +12876,7 @@ header.stickycls {
     top: 50%;
     left: 50%;
     margin-top: -20px;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 100%;
     width: 40px;
     height: 40px;
@@ -12991,7 +12989,7 @@ header.stickycls {
     transform: rotate(-45deg);
     width: 100px;
     display: block;
-    background: #206664;
+    background: #3BB77E;
     -webkit-box-shadow: 0 3px 10px -5px #000;
     box-shadow: 0 3px 10px -5px #000;
     position: absolute;
@@ -13005,10 +13003,10 @@ header.stickycls {
     left: 0px;
     top: 100%;
     z-index: -1;
-    border-left: 3px solid #206664;
+    border-left: 3px solid #3BB77E;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #206664
+    border-top: 3px solid #3BB77E
 }
 
 .tools-grey .ribbon span:after {
@@ -13018,9 +13016,9 @@ header.stickycls {
     top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
-    border-right: 3px solid #206664;
+    border-right: 3px solid #3BB77E;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #206664
+    border-top: 3px solid #3BB77E
 }
 
 .j-box .product-box {
@@ -13116,7 +13114,7 @@ header.stickycls {
 
 .bakery-box .product-box .img-wrapper .lable-block .lable3 {
     background-color: #ffffff;
-    color: #206664;
+    color: #3BB77E;
     padding: 4px 22px;
     border-radius: 0
 }
@@ -13145,7 +13143,7 @@ header.stickycls {
 }
 
 .bakery-box .product-box .add-button {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     text-align: center;
     font-size: 18px;
@@ -13256,7 +13254,7 @@ header.stickycls {
 }
 
 .product-style-2.product-box .product-info .add-btn a,.product-style-2 .product-wrap .product-info .add-btn a {
-    color: #206664;
+    color: #3BB77E;
     text-transform: capitalize;
     font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (1920 - 320)))
 }
@@ -13281,7 +13279,7 @@ header.stickycls {
 }
 
 .product-style-3.product-box .product-info .add-btn a,.product-style-3 .product-wrap .product-info .add-btn a {
-    color: #206664;
+    color: #3BB77E;
     text-transform: capitalize;
     font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (1920 - 320)))
 }
@@ -13310,7 +13308,7 @@ header.stickycls {
 }
 
 .product-style-4.product-box .cart-detail a i,.product-style-4.product-wrap .cart-detail a i {
-    color: #206664;
+    color: #3BB77E;
     font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13346,7 +13344,7 @@ header.stickycls {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     width: 26px;
     height: 26px;
@@ -13385,10 +13383,10 @@ header.stickycls {
 
 .product-style-4.product-box .addtocart_btn .cart_qty.qty-box .input-group .form-control,.product-style-4.product-wrap .addtocart_btn .cart_qty.qty-box .input-group .form-control {
     width: 100%;
-    border-color: #206664;
+    border-color: #3BB77E;
     color: #fff;
     padding: 0;
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .product-style-4.product-box .addtocart_btn .cart_qty.qty-box .input-group .form-control:focus,.product-style-4.product-wrap .addtocart_btn .cart_qty.qty-box .input-group .form-control:focus {
@@ -13397,7 +13395,7 @@ header.stickycls {
 }
 
 .product-style-4.product-box .addtocart_btn .cart_qty.qty-box .input-group button,.product-style-4.product-wrap .addtocart_btn .cart_qty.qty-box .input-group button {
-    background: #206664 !important;
+    background: #3BB77E !important;
     position: absolute;
     height: 100%;
     z-index: 9
@@ -13459,7 +13457,7 @@ header.stickycls {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff;
     width: 36px;
     height: 36px;
@@ -13504,10 +13502,10 @@ header.stickycls {
 
 .product-style-5.product-box .addtocart_btn .cart_qty.qty-box .input-group .form-control {
     width: 100%;
-    border-color: #206664;
+    border-color: #3BB77E;
     color: #fff;
     padding: 0;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 20px
 }
 
@@ -13517,7 +13515,7 @@ header.stickycls {
 }
 
 .product-style-5.product-box .addtocart_btn .cart_qty.qty-box .input-group button {
-    background: #206664 !important;
+    background: #3BB77E !important;
     position: absolute;
     height: 100%;
     z-index: 9;
@@ -13573,7 +13571,7 @@ header.stickycls {
 .dark-box .product-box .cart-detail i {
     padding: 8px;
     border-radius: 100%;
-    background-color: #206664;
+    background-color: #3BB77E;
     font-size: 14px;
     color: white;
     margin-bottom: 10px
@@ -13787,7 +13785,7 @@ header.stickycls {
 }
 
 .service-block svg path {
-    fill: #206664
+    fill: #3BB77E
 }
 
 .service-block h4 {
@@ -13813,7 +13811,7 @@ header.stickycls {
 }
 
 .service-block:hover h4 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease
 }
@@ -13834,7 +13832,7 @@ header.stickycls {
 }
 
 .service-block1 svg path {
-    fill: #206664
+    fill: #3BB77E
 }
 
 .service-block1 h4 {
@@ -13857,7 +13855,7 @@ header.stickycls {
 }
 
 .service-block1:hover h4 {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease
 }
@@ -13918,7 +13916,7 @@ header.stickycls {
 }
 
 .theme-bg-service.service-w-bg .service-block .media {
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .theme-bg-service.service-w-bg .service-block svg path {
@@ -14241,7 +14239,7 @@ header.stickycls {
 }
 
 .box-product .full-box .theme-card .offer-slider .product-box2 .cart-bottom i:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -14316,7 +14314,7 @@ header.stickycls {
     display: none;
     color: #fff;
     text-align: center;
-    background: #206664;
+    background: #3BB77E;
     border: none;
     font-size: 22px;
     padding: 7px;
@@ -14328,18 +14326,18 @@ header.stickycls {
 }
 
 .tap-top.green-top {
-    background-image: -webkit-gradient(linear, left top, right top, from(#206664), to(var(--theme-color2)));
-    background-image: linear-gradient(to right, #206664, var(--theme-color2));
+    background-image: -webkit-gradient(linear, left top, right top, from(#3BB77E), to(var(--theme-color2)));
+    background-image: linear-gradient(to right, #3BB77E, var(--theme-color2));
     border: 1px solid rgba(255,255,255,0.5)
 }
 
 .tap-top.gradient-top {
-    background: -webkit-gradient(linear, left top, left bottom, from(#206664), color-stop(99%, var(--theme-color2)));
-    background: linear-gradient(180deg, #206664 0%, var(--theme-color2) 99%)
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BB77E), color-stop(99%, var(--theme-color2)));
+    background: linear-gradient(180deg, #3BB77E 0%, var(--theme-color2) 99%)
 }
 
 .sitemap_page .title {
-    color: #206664;
+    color: #3BB77E;
     text-transform: capitalize;
     font-weight: 700
 }
@@ -14367,7 +14365,7 @@ header.stickycls {
 }
 
 .sitemap_page ul li a:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -14433,7 +14431,7 @@ header.stickycls {
 }
 
 .template-password #container #login h2 {
-    color: #206664;
+    color: #3BB77E;
     font-size: 30px;
     font-weight: 400
 }
@@ -14464,7 +14462,7 @@ header.stickycls {
 }
 
 .template-password #container #owner a {
-    color: #206664
+    color: #3BB77E
 }
 
 .review-page .comment-section {
@@ -14571,7 +14569,7 @@ header.stickycls {
 }
 
 .about-head h2 {
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 0
 }
 
@@ -14611,7 +14609,7 @@ header.stickycls {
 
 .testimonial .testimonial-slider .media h5 {
     font-weight: 700;
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 0;
     margin-top: 7px
 }
@@ -14683,7 +14681,7 @@ header.stickycls {
 }
 
 .team h4 {
-    color: #206664;
+    color: #3BB77E;
     font-weight: 700;
     margin-top: 15px;
     margin-bottom: 5px
@@ -14712,11 +14710,11 @@ header.stickycls {
 .collection-filter-block .product-service .media svg {
     height: 40px;
     width: 40px;
-    fill: #206664
+    fill: #3BB77E
 }
 
 .collection-filter-block .product-service .media svg path {
-    fill: #206664
+    fill: #3BB77E
 }
 
 .collection-filter-block .product-service .media .media-body {
@@ -15293,7 +15291,7 @@ header.stickycls {
     width: auto;
     border-radius: 0;
     font-size: 18px;
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: 5px 16px;
     color: #fff;
     margin-bottom: 20px;
@@ -15349,7 +15347,7 @@ header.stickycls {
 }
 
 .product-pagination .pagination .page-item.active a {
-    color: #206664;
+    color: #3BB77E;
     background-color: #fff;
     border-color: #ddd
 }
@@ -15701,7 +15699,7 @@ header.stickycls {
 
 .faq-section .accordion.theme-accordion .card .card-header button:hover {
     text-decoration: none;
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease
 }
@@ -15872,14 +15870,14 @@ header.stickycls {
 
 .contact-page .contact-right ul li .contact-icon i {
     font-size: 20px;
-    color: #206664
+    color: #3BB77E
 }
 
 .contact-page .contact-right ul li .contact-icon h6 {
     text-transform: uppercase;
     padding-top: 5px;
     font-weight: 600;
-    color: #206664
+    color: #3BB77E
 }
 
 .contact-page .contact-right ul li p {
@@ -16031,7 +16029,7 @@ header.stickycls {
 }
 
 .cart-section tbody tr td .td-color,.wishlist-section tbody tr td .td-color {
-    color: #206664
+    color: #3BB77E
 }
 
 .cart-section tbody tr td h2,.wishlist-section tbody tr td h2 {
@@ -16118,7 +16116,7 @@ header.stickycls {
 
 .cart_counter .countdownholder span {
     padding-left: 8px;
-    color: #206664;
+    color: #3BB77E;
     padding-right: 6px
 }
 
@@ -16279,7 +16277,7 @@ header.stickycls {
 }
 
 .blog-page .blog-sidebar .theme-card .popular-blog li .blog-date {
-    background-color: #206664;
+    background-color: #3BB77E;
     height: 70px;
     width: 70px;
     margin: 0 15px 0 0;
@@ -16327,7 +16325,7 @@ header.stickycls {
 }
 
 .blog-page .blog-media .blog-right h6 {
-    color: #206664;
+    color: #3BB77E;
     text-transform: uppercase;
     margin-bottom: 10px
 }
@@ -16553,7 +16551,7 @@ header.stickycls {
 
 .product-right .price-detail span {
     font-size: 16px;
-    color: #206664;
+    color: #3BB77E;
     padding-left: 10px
 }
 
@@ -16574,7 +16572,7 @@ header.stickycls {
 
 .product-right h4 span {
     padding-left: 5px;
-    color: #206664
+    color: #3BB77E
 }
 
 .product-right .color-variant {
@@ -16700,7 +16698,7 @@ header.stickycls {
 }
 
 .product-right .product-icon .product-social li a:hover {
-    color: #206664
+    color: #3BB77E
 }
 
 .product-right .product-icon .product-social li:last-child {
@@ -16727,7 +16725,7 @@ header.stickycls {
 }
 
 .product-right .product-icon .wishlist-btn:hover i {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -16949,12 +16947,12 @@ header.stickycls {
 }
 
 .tab-product .nav-material.nav-tabs .nav-item .material-border,.product-full-tab .nav-material.nav-tabs .nav-item .material-border {
-    border-bottom: 2px solid #206664;
+    border-bottom: 2px solid #3BB77E;
     opacity: 0
 }
 
 .tab-product .nav-material.nav-tabs .nav-link.active,.product-full-tab .nav-material.nav-tabs .nav-link.active {
-    color: #206664
+    color: #3BB77E
 }
 
 .tab-product .nav-material.nav-tabs .nav-link.active ~ .material-border,.product-full-tab .nav-material.nav-tabs .nav-link.active ~ .material-border {
@@ -17010,7 +17008,7 @@ header.stickycls {
 
 .tab-product .title,.product-full-tab .title {
     padding-right: 45px;
-    color: #206664;
+    color: #3BB77E;
     padding-bottom: 20px
 }
 
@@ -17095,11 +17093,11 @@ header.stickycls {
 .tab-product .product-box .cart-info a :hover,.tab-product .product-box .cart-info button :hover,.product-full-tab .product-box .cart-info a :hover,.product-full-tab .product-box .cart-info button :hover {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #206664
+    color: #3BB77E
 }
 
 .tab-product .product-box .lbl-1,.product-full-tab .product-box .lbl-1 {
-    background-color: #206664;
+    background-color: #3BB77E;
     padding: 2px 20px 2px 10px;
     display: inline-block;
     text-align: center;
@@ -17119,8 +17117,8 @@ header.stickycls {
     top: 0;
     width: 0;
     height: 0;
-    border-top: 12px solid #206664;
-    border-bottom: 13px solid #206664;
+    border-top: 12px solid #3BB77E;
+    border-bottom: 13px solid #3BB77E;
     border-right: 7px solid #fff
 }
 
@@ -17184,7 +17182,7 @@ header.stickycls {
 .tab-product .product-box .product-details .price,.product-full-tab .product-box .product-details .price {
     padding-bottom: 10px;
     font-size: 16px;
-    color: #206664
+    color: #3BB77E
 }
 
 .product-full-tab {
@@ -17208,7 +17206,7 @@ header.stickycls {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     width: 100%;
-    color: #206664
+    color: #3BB77E
 }
 
 .product_image_4>div:nth-last-child(-n+2) {
@@ -17360,7 +17358,7 @@ header.stickycls {
 }
 
 .sticky-bottom-cart .product-image .content h6 span {
-    color: #206664;
+    color: #3BB77E;
     margin-left: 5px
 }
 
@@ -17488,7 +17486,7 @@ header.stickycls {
 }
 
 .custom-variations ul li.active {
-    border-color: #206664
+    border-color: #3BB77E
 }
 
 @-webkit-keyframes buttons-shake {
@@ -17813,7 +17811,7 @@ header.stickycls {
     position: relative;
     font-size: 18px;
     line-height: 20px;
-    color: #206664;
+    color: #3BB77E;
     font-weight: 400;
     width: 35%;
     float: right
@@ -17851,7 +17849,7 @@ header.stickycls {
     position: relative;
     font-size: 18px;
     line-height: 20px;
-    color: #206664;
+    color: #3BB77E;
     font-weight: 400
 }
 
@@ -17947,12 +17945,12 @@ header.stickycls {
 }
 
 .dashboard-left .block-content ul li.active {
-    color: #206664;
-    border-right: 2px solid #206664
+    color: #3BB77E;
+    border-right: 2px solid #3BB77E
 }
 
 .dashboard-left .block-content ul li.active a {
-    color: #206664
+    color: #3BB77E
 }
 
 .dashboard-left .block-content ul li:before {
@@ -17973,13 +17971,13 @@ header.stickycls {
 }
 
 .dashboard-left .block-content ul li:hover {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
 
 .dashboard-left .block-content ul li:hover a {
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -18016,7 +18014,7 @@ header.stickycls {
 }
 
 .dashboard .box a {
-    color: #206664
+    color: #3BB77E
 }
 
 .dashboard .box h6 {
@@ -18043,7 +18041,7 @@ header.stickycls {
     position: absolute;
     right: 0;
     top: 12px;
-    color: #206664
+    color: #3BB77E
 }
 
 .dashboard .box address {
@@ -18057,13 +18055,13 @@ header.stickycls {
 }
 
 .box-content a {
-    color: #206664
+    color: #3BB77E
 }
 
 .account-sidebar {
     display: none;
     cursor: pointer;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff;
     width: 30%;
     font-size: 16px;
@@ -18113,7 +18111,7 @@ header.stickycls {
 }
 
 .user-dashboard-section .box a {
-    color: #206664
+    color: #3BB77E
 }
 
 .user-dashboard-section .box h6 {
@@ -18144,7 +18142,7 @@ header.stickycls {
 
 .user-dashboard-section .box .box-title>a {
     margin-left: auto;
-    color: #206664
+    color: #3BB77E
 }
 
 .user-dashboard-section .box address {
@@ -18160,7 +18158,7 @@ header.stickycls {
 }
 
 .user-dashboard-section .edit-link {
-    color: #206664;
+    color: #3BB77E;
     margin-left: 10px;
     text-transform: capitalize
 }
@@ -18181,7 +18179,7 @@ header.stickycls {
 
 .user-dashboard-section .address-book-section .select-box .address-box .top h6 span {
     float: right;
-    background-color: #206664;
+    background-color: #3BB77E;
     color: #fff;
     padding: 2px 15px;
     font-size: 80%;
@@ -18296,7 +18294,7 @@ header.stickycls {
     position: absolute;
     -webkit-animation: grow 3s infinite;
     animation: grow 3s infinite;
-    fill: #206664;
+    fill: #3BB77E;
     opacity: 0
 }
 
@@ -18394,7 +18392,7 @@ header.stickycls {
 }
 
 .success-text .checkmark__background {
-    fill: #206664;
+    fill: #3BB77E;
     -webkit-animation: rotate 35s linear both infinite;
     animation: rotate 35s linear both infinite
 }
@@ -18415,7 +18413,7 @@ header.stickycls {
 }
 
 .success-text.order-fail i {
-    color: #206664
+    color: #3BB77E
 }
 
 .order-success-sec {
@@ -18822,7 +18820,7 @@ header.stickycls {
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 50%
 }
 
@@ -19084,7 +19082,7 @@ header.stickycls {
     height: 80px;
     background: #f7f7f7;
     margin: 0 auto 25px auto;
-    color: #206664;
+    color: #3BB77E;
     text-align: center;
     font-weight: 500;
     border-radius: 10px;
@@ -19168,7 +19166,7 @@ header.stickycls {
 }
 
 .dashboard-section .dashboard-sidebar .profile-top .profile-image .profile-edit svg {
-    stroke: #206664
+    stroke: #3BB77E
 }
 
 .dashboard-section .dashboard-sidebar .profile-top .profile-detail {
@@ -19202,7 +19200,7 @@ header.stickycls {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-left: 3px solid #206664;
+    border-left: 3px solid #3BB77E;
     border-radius: 8px
 }
 
@@ -19213,7 +19211,7 @@ header.stickycls {
 
 .dashboard-section .counter-section .counter-box h3 {
     font-weight: 700;
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 4px;
     font-size: 20px
 }
@@ -19296,7 +19294,7 @@ header.stickycls {
     padding: 2px 16px;
     border-radius: 2px;
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     cursor: pointer
 }
 
@@ -19320,7 +19318,7 @@ header.stickycls {
     margin-left: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
     border-radius: 2px;
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     cursor: pointer
 }
 
@@ -19393,7 +19391,7 @@ header.stickycls {
     z-index: 1;
     width: 0.75rem;
     height: 0.75rem;
-    background: #206664;
+    background: #3BB77E;
     border-radius: 50%
 }
 
@@ -19444,17 +19442,17 @@ header.stickycls {
 
 .faq-tab .nav-tabs .nav-item .nav-link.active {
     border: none;
-    border-right: 2px solid #206664;
+    border-right: 2px solid #3BB77E;
     border-radius: 0;
-    color: #206664;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
 
 .faq-tab .nav-tabs .nav-item .nav-link:hover {
     border: none;
-    border-right: 2px solid #206664;
-    color: #206664;
+    border-right: 2px solid #3BB77E;
+    color: #3BB77E;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -19594,11 +19592,11 @@ header.stickycls {
 
 .tracking-page .wrapper .arrow-steps .step.current {
     color: #fff;
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .tracking-page .wrapper .arrow-steps .step.current:after {
-    border-left: 17px solid #206664
+    border-left: 17px solid #3BB77E
 }
 
 .tracking-page .table th {
@@ -19657,7 +19655,7 @@ header.stickycls {
     font-weight: 400;
     padding-bottom: 16px;
     color: black;
-    border-color: #206664 !important
+    border-color: #3BB77E !important
 }
 
 .invoice-wrapper .invoice-body .table td {
@@ -19742,7 +19740,7 @@ header.stickycls {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #206664
+    background-color: #3BB77E
 }
 
 .theme-invoice-1 .invoice-header .upper-icon img {
@@ -19786,7 +19784,7 @@ header.stickycls {
 }
 
 .theme-invoice-1 .invoice-header .detail-bottom ul li span {
-    color: #206664;
+    color: #3BB77E;
     text-transform: capitalize
 }
 
@@ -19829,7 +19827,7 @@ header.stickycls {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 30px;
-    border-bottom: 2px solid #206664;
+    border-bottom: 2px solid #3BB77E;
     margin-bottom: 20px
 }
 
@@ -19888,7 +19886,7 @@ header.stickycls {
 
 .theme-invoice-3 .invoice-header ul li i {
     border-radius: 8px;
-    background-color: #206664;
+    background-color: #3BB77E;
     width: 34px;
     height: 34px;
     display: -webkit-box;
@@ -19921,7 +19919,7 @@ header.stickycls {
 .theme-invoice-3 .date-detail li span {
     font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     margin-right: 8px
 }
 
@@ -20051,7 +20049,7 @@ header.stickycls {
 
 .theme-invoice-4 .invoice-wrapper .invoice-footer ul li i {
     margin-right: 30px;
-    color: #206664;
+    color: #3BB77E;
     font-size: 20px
 }
 
@@ -20080,7 +20078,7 @@ header.stickycls {
 }
 
 .theme-invoice-4 .table-sec .table-footer {
-    background-color: #206664;
+    background-color: #3BB77E;
     display: inline-block;
     padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -20100,7 +20098,7 @@ header.stickycls {
 .theme-invoice-4 .date-detail li span {
     font-size: 18px;
     text-transform: capitalize;
-    color: #206664;
+    color: #3BB77E;
     margin-right: 8px
 }
 
@@ -20160,7 +20158,7 @@ header.stickycls {
 }
 
 .theme-invoice-5 .invoice-wrapper .invoice-body .table thead th {
-    border-bottom: 2px solid #206664 !important
+    border-bottom: 2px solid #3BB77E !important
 }
 
 .theme-invoice-5 .invoice-wrapper .invoice-body .table tfoot {
@@ -20216,7 +20214,7 @@ header.stickycls {
 
 .theme-invoice-5 .header-panel ul li i {
     margin-right: 30px;
-    color: #206664;
+    color: #3BB77E;
     font-size: 20px
 }
 
@@ -20394,7 +20392,7 @@ header.stickycls {
 }
 
 .setting-box .setting-contant .setting_buttons .setting_btn {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white;
     width: 100%
 }
@@ -20555,7 +20553,7 @@ header.stickycls {
 }
 
 .demo-section .title-text h3 {
-    color: #206664;
+    color: #3BB77E;
     margin-bottom: 24px;
     display: inline-block;
     padding-bottom: 5px;
@@ -20617,7 +20615,7 @@ header.stickycls {
 }
 
 .demo-section .demo-effects>div .demo-text h4 span {
-    background-color: #206664;
+    background-color: #3BB77E;
     border-radius: 4px;
     color: #fff;
     font-size: 13px;
@@ -20644,13 +20642,13 @@ header.stickycls {
     border: 1px solid #ddd;
     background-color: white;
     width: 90px;
-    color: #206664;
+    color: #3BB77E;
     padding: 5px 10px;
     border-radius: 30px
 }
 
 .demo-section .demo-effects>div .demo-text .demo-btn .btn:hover {
-    background-color: #206664;
+    background-color: #3BB77E;
     color: white
 }
 
@@ -21017,7 +21015,7 @@ ul.header-dropdown {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    background: #206664;
+    background: #3BB77E;
     color: #fff;
     display: inline-block;
     font-size: 12px;
@@ -21090,7 +21088,7 @@ ul.header-dropdown {
 .product-price {
     font-size: 18px;
     font-weight: bold;
-    color: #206664;
+    color: #3BB77E;
 }
 
 .product-price small {
@@ -21116,16 +21114,19 @@ ul.header-dropdown {
 .product-links a:hover {
     color: #fbb72c;
 }
-
+.category-boxes.bg0 {background-color: #fffceb  !important}
 .category-boxes.bg1 {background-color: #f2fce4 !important}
-.category-boxes.bg2{background-color: #fffceb !important}
+.category-boxes.bg2{background-color: #e6ffc1a6 !important}
 .category-boxes.bg3 {background-color: #ecffec !important}
 .category-boxes.bg4 {background-color: #feefea !important}
 .category-boxes.bg5 {background-color: #fff3eb !important}
 .category-boxes.bg6 {background-color: #fff3ff !important}
 .category-boxes.bg7 {background-color: #f2fce4 !important}
 .category-boxes.bg8 {background-color: #feefea !important}
-
+.category-boxes.bg9 {background-color: #fffceb  !important}
+.category-boxes.bg10 {background-color: #f3d9d9 !important}
+.category-boxes.bg11{background-color: #e6ffc1a6 !important}
+.category-boxes.bg12 {background-color: #ecffec !important}
 .categories {
     margin-top: 22px;
 }
@@ -21194,7 +21195,7 @@ ul.header-dropdown {
     font-weight: 900;
 }
 .text-brand {
-    color: #206664 !important;
+    color: #3BB77E !important;
 }
 .product-price .save-price {
     font-size: 12px;
@@ -21244,7 +21245,7 @@ button.button.button-add-to-cart {
     font-family: "Quicksand", sans-serif;
     color: #ffffff;
     border: none;
-    background-color: #206664;
+    background-color: #3BB77E;
     display: flex;
     align-items: center;
 }
@@ -21273,7 +21274,7 @@ button.button.button-add-to-cart  i.fa.fa-shopping-cart {
     border-radius: 0;
 }
 .breadcrumb a {
-    color: #206664 !important;
+    color: #3BB77E !important;
 }
 .breadcrumb span {
     position: relative;
@@ -21395,8 +21396,8 @@ h5.section-title.style-1.mb-30 {
 }
 .size-filter.list-filter li.active a {
     color: #fff;
-    background-color: #206664;
-    border-color: #206664;
+    background-color: #3BB77E;
+    border-color: #3BB77E;
 }
 .attr-size strong.mr-10 {
     font-size: 13px;
@@ -21561,7 +21562,7 @@ marquee.marquee {
     font-weight: 800;
 }
 .product-list-small .product-price {
-    color: #206664;
+    color: #3BB77E;
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
@@ -21632,7 +21633,7 @@ marquee.marquee {
 }
 
 .nav-item.nav-link.active {
-    color: #206664;
+    color: #3BB77E;
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -21704,7 +21705,7 @@ a.btn.mb-20.w-100 {
     border-radius: 4px;
     color: #fff;
     border: 1px solid transparent;
-    background-color: #206664;
+    background-color: #3BB77E;
     cursor: pointer;
     -webkit-transition: all 300ms linear 0s;
     transition: all 300ms linear 0s;
@@ -21768,7 +21769,7 @@ a.button.button-add-to-cart {
     font-family: "Quicksand", sans-serif;
     color: #ffffff;
     border: none;
-    background-color: #206664;
+    background-color: #3BB77E;
     display: flex;
     align-items: center;
     text-align: center;
@@ -21805,7 +21806,7 @@ ul.onhover-show-div li {
 }
 
 .progress-bar {
-  background-color: #206664;
+  background-color: #3BB77E;
   height: 8px;
   width: 0%;
 }

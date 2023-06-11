@@ -125,12 +125,16 @@ export const Home = () => {
         </div>
         <div className="row col-set">
           {currentCategories?.slice(0, numberOfitemsShown)?.map((item, index) => (
+            <>
+            {console.log(index,'indexindex')}
             <Category
               key={index}
+              index={index}
               id={item._id}
               image={item.image}
               categories={item.categories}
             />
+            </>
           ))}
         </div>
       </div>
